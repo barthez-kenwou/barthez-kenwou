@@ -5,21 +5,20 @@
 
 ## 🧑‍💻 About Me
 
-I am a passionate full-stack developer with expertise in modern web and mobile technologies. I am open to collaborations, feedback, and new opportunities to create impactful projects..
+Passionate about web development and cloud computing for over `3 years`, I specialize in creating modern, high-performance, and scalable web applications.
 
-`2+ years` of experience in full-stack development, specializing in **React**, **Node.js** and **Typescript**.
+My expertise covers the entire development cycle, from design to production deployment, including performance optimization and security. I master AWS technologies and DevOps practices to ensure reliable and automated deployments.
 
-<!-- ![Barthez Kenwou](assets/profile.JPG) -->
+Always looking for new challenges, I continuously invest in learning new technologies and industry best practices.
 
 <hr/>
 
 ## 👨‍🦱 Some Soft Skills
 
-- **open and sociable** 🤝
 - **Clear and effective communication** 👀
 - **Continuous learning** 🕵️
 - **Intellectual curiosity**👀
-- **Leadership skills** 🤝
+- **Team Leadership**
   
 <hr/>
 
