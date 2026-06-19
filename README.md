@@ -1135,29 +1135,19 @@ sequenceDiagram
 
 <div align="center">
 
-<!-- README-AUTO-START:live-pulse -->
-<img src="https://img.shields.io/badge/Portfolio_deployed_pending_sync-3B82F6?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Last portfolio deploy pending_sync"/>
-&nbsp;
-<img src="https://img.shields.io/badge/Active_repos_N_A-7C3AED?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Active repositories N_A"/>
-&nbsp;
-<img src="https://img.shields.io/badge/PRs_this_month_N_A-FF6B35?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Pull requests this month N_A"/>
-<!-- README-AUTO-END:live-pulse -->
-
-<br/><br/>
-
 <!-- README-AUTO-START:blog-latest -->
-<a href="https://barthez-kenwou.dev/blog"><img src="https://img.shields.io/badge/Visit_the_Blog-FF6B35?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Visit the blog"/></a>
+<a href="https://barthez-kenwou.dev/blog/ci-cd-github-actions-zero-to-expert"><img src="https://img.shields.io/badge/CI_CD_WITH_GITHUB_ACTIONS-FF6B35?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="CI CD WITH GITHUB ACTIONS"/></a>
+&nbsp;
+<a href="https://barthez-kenwou.dev/blog/microservices-docker-kubernetes-mastery"><img src="https://img.shields.io/badge/MICROSERVICES_DOCKER_K8S-7C3AED?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white" alt="MICROSERVICES DOCKER K8S"/></a>
+&nbsp;
+<a href="https://barthez-kenwou.dev/blog/devsecops-in-practice-sast-dast"><img src="https://img.shields.io/badge/DEVSECOPS_IN_PRACTICE-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white" alt="DEVSECOPS IN PRACTICE"/></a>
 <!-- README-AUTO-END:blog-latest -->
 
-<br/><br/>
+<br/>
 
 <a href="https://barthez-kenwou.dev/blog">
 <img src="https://img.shields.io/badge/READ_ALL_ARTICLES-7C3AED?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Read all articles"/>
 </a>
-
-<br/>
-
-<sub><b>Auto-synced daily via GitHub Actions · portfolio commits · live GitHub stats</b></sub>
 
 </div>
 

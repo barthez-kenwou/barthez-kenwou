@@ -31,7 +31,6 @@ jobs:
 
       - name: Sync dynamic README sections
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PORTFOLIO_BLOG_PATH: portfolio/src/entities/blogs/api/mock/blog.mocks.ts
         run: node scripts/update-readme.mjs
 

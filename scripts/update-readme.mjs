@@ -5,8 +5,6 @@ const PROJECTS_PATH = 'data/projects.json';
 const PORTFOLIO_BLOG_PATH =
   process.env.PORTFOLIO_BLOG_PATH ||
   'portfolio/src/entities/blogs/api/mock/blog.mocks.ts';
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-const GITHUB_USER = process.env.GITHUB_USER || 'barthez-kenwou';
 
 function replaceSection(content, name, body) {
   const start = `<!-- README-AUTO-START:${name} -->`;
@@ -107,35 +105,32 @@ function blogBadgeMeta(post) {
   return { color: '7C3AED', logo: 'hashnode' };
 }
 
-function blogBadge(post, override = {}) {
+function blogBadge(post, override = {}, blogBaseUrl) {
   const color = override.color || blogBadgeMeta(post).color;
   const logo = override.logo || blogBadgeMeta(post).logo;
   const label = override.label || badgeLabel(post.title);
   const url = `${blogBaseUrl}/${post.slug}`;
+  const alt = post.title || label.replace(/_/g, ' ');
 
-  return `<a href="${url}"><img src="https://img.shields.io/badge/${encodeURIComponent(label)}-${color}?style=for-the-badge&amp;logo=${logo}&amp;logoColor=white" alt="${post.title}"/></a>`;
+  return `<a href="${url}"><img src="https://img.shields.io/badge/${encodeURIComponent(label)}-${color}?style=for-the-badge&amp;logo=${logo}&amp;logoColor=white" alt="${alt}"/></a>`;
 }
 
-async function githubJson(url) {
-  const response = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
-      Accept: 'application/vnd.github+json',
-      'User-Agent': 'barthez-readme-updater',
-    },
+function postsFromConfig(featuredBlogSlugs) {
+  return featuredBlogSlugs.map((entry) => {
+    if (typeof entry === 'string') {
+      return { slug: entry, title: entry.replace(/-/g, ' '), badge: {} };
+    }
+
+    return {
+      slug: entry.slug,
+      title: (entry.label || entry.slug).replace(/_/g, ' '),
+      badge: entry,
+    };
   });
-
-  if (!response.ok) {
-    throw new Error(`GitHub API ${response.status} for ${url}`);
-  }
-
-  return response.json();
 }
 
 const config = JSON.parse(fs.readFileSync(PROJECTS_PATH, 'utf8'));
 const blogBaseUrl = config.blogBaseUrl || 'https://barthez-kenwou.dev/blog';
-const portfolioRepo = config.portfolioRepo || 'barthez-kenwou-porfolio';
-const newArticleDays = config.newArticleDays || 30;
 
 let readme = fs.readFileSync(README_PATH, 'utf8');
 
@@ -145,10 +140,10 @@ for (const project of config.projects) {
 
 let latestPosts = [];
 
-if (fs.existsSync(PORTFOLIO_BLOG_PATH)) {
-  const allPosts = parseBlogPosts(PORTFOLIO_BLOG_PATH);
+if (Array.isArray(config.featuredBlogSlugs) && config.featuredBlogSlugs.length > 0) {
+  if (fs.existsSync(PORTFOLIO_BLOG_PATH)) {
+    const allPosts = parseBlogPosts(PORTFOLIO_BLOG_PATH);
 
-  if (Array.isArray(config.featuredBlogSlugs) && config.featuredBlogSlugs.length > 0) {
     latestPosts = config.featuredBlogSlugs
       .map((entry) => {
         const slug = typeof entry === 'string' ? entry : entry.slug;
@@ -157,13 +152,17 @@ if (fs.existsSync(PORTFOLIO_BLOG_PATH)) {
         return typeof entry === 'string' ? post : { ...post, badge: entry };
       })
       .filter(Boolean);
+
+    console.log(`Resolved ${latestPosts.length} featured blog posts from portfolio`);
   }
 
   if (latestPosts.length === 0) {
-    latestPosts = allPosts.slice(0, 3);
+    latestPosts = postsFromConfig(config.featuredBlogSlugs);
+    console.log(`Resolved ${latestPosts.length} featured blog posts from config`);
   }
-
-  console.log(`Resolved ${latestPosts.length} featured blog posts`);
+} else if (fs.existsSync(PORTFOLIO_BLOG_PATH)) {
+  latestPosts = parseBlogPosts(PORTFOLIO_BLOG_PATH).slice(0, 3);
+  console.log(`Resolved ${latestPosts.length} latest blog posts from portfolio`);
 } else {
   console.warn(`Portfolio blog file not found: ${PORTFOLIO_BLOG_PATH}`);
 }
@@ -171,74 +170,11 @@ if (fs.existsSync(PORTFOLIO_BLOG_PATH)) {
 const blogHtml =
   latestPosts.length > 0
     ? latestPosts
-        .map((post) => blogBadge(post, post.badge || {}))
+        .map((post) => blogBadge(post, post.badge || {}, blogBaseUrl))
         .join('\n&nbsp;\n')
     : `<a href="https://barthez-kenwou.dev/blog"><img src="https://img.shields.io/badge/Visit_the_Blog-FF6B35?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Visit the blog"/></a>`;
 
 readme = replaceSection(readme, 'blog-latest', blogHtml);
-
-let lastDeploy = 'pending_sync';
-let activeRepos = 'N_A';
-let prsMonth = 'N_A';
-
-if (GITHUB_TOKEN) {
-  try {
-    const commits = await githubJson(
-      `https://api.github.com/repos/${GITHUB_USER}/${portfolioRepo}/commits?per_page=1`
-    );
-
-    if (Array.isArray(commits) && commits[0]?.commit?.committer?.date) {
-      lastDeploy = commits[0].commit.committer.date.slice(0, 10);
-    }
-
-    const repos = await githubJson(
-      `https://api.github.com/search/repositories?q=user:${GITHUB_USER}+fork:false+archived:false`
-    );
-    activeRepos = String(repos.total_count ?? 'N_A');
-
-    const now = new Date();
-    const monthStart = new Date(now.getFullYear(), now.getMonth(), 1)
-      .toISOString()
-      .slice(0, 10);
-
-    const prs = await githubJson(
-      `https://api.github.com/search/issues?q=author:${GITHUB_USER}+type:pr+created:>=${monthStart}`
-    );
-    prsMonth = String(prs.total_count ?? 'N_A');
-  } catch (error) {
-    console.error('GitHub API warning:', error.message);
-  }
-}
-
-const now = new Date();
-const latestPost = latestPosts[0];
-const newestPost = fs.existsSync(PORTFOLIO_BLOG_PATH)
-  ? parseBlogPosts(PORTFOLIO_BLOG_PATH)[0]
-  : latestPost;
-const isNewArticle =
-  newestPost &&
-  now.getTime() - new Date(newestPost.date).getTime() <=
-    newArticleDays * 24 * 60 * 60 * 1000;
-
-const pulseParts = [];
-
-if (isNewArticle && newestPost) {
-  pulseParts.push(
-    `<a href="${blogBaseUrl}/${newestPost.slug}"><img src="https://img.shields.io/badge/NEW_ARTICLE-22C55E?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="New article"/></a>`
-  );
-}
-
-pulseParts.push(
-  `<img src="https://img.shields.io/badge/Portfolio_deployed_${lastDeploy}-3B82F6?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Last portfolio deploy ${lastDeploy}"/>`
-);
-pulseParts.push(
-  `<img src="https://img.shields.io/badge/Active_repos_${activeRepos}-7C3AED?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Active repositories ${activeRepos}"/>`
-);
-pulseParts.push(
-  `<img src="https://img.shields.io/badge/PRs_this_month_${prsMonth}-FF6B35?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Pull requests this month ${prsMonth}"/>`
-);
-
-readme = replaceSection(readme, 'live-pulse', pulseParts.join('\n&nbsp;\n'));
 
 fs.writeFileSync(README_PATH, readme);
 console.log('README dynamic sections updated successfully');
