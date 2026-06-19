@@ -123,14 +123,185 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-| Project | Stack | Live |
-|:--------|:------|:----:|
-| **GTA IT** — Corporate PWA + CMS + Backoffice | React · Node · Prisma · AWS | [gta-it.com](https://gta-it.com) |
-| **GTA Academy** — Training platform launch | React · Vite · Tailwind · shadcn/ui | [academy.gta-it.com](https://academy.gta-it.com) |
-| **COMBO** — Modular SaaS ERP for restaurants | Next.js · Turborepo · PostgreSQL · AWS | `In progress` |
-| **Kaza** — Real estate platform + AI fraud detection | React Native · K8s · GraphQL · AWS | `In progress` |
-| **ESOPA** — NGO platform + DevOps infra | WordPress · Docker · Cloudflare | [esopa.org](https://esopa.org) |
-| **Portfolio** — Fullstack platform + CI/CD | React · Express · Redis · OVH VPS | [barthez-kenwou.dev](https://barthez-kenwou.dev) |
+<div align="center">
+
+<table width="94%">
+<tr>
+<td align="center" width="34%">
+
+<img src="https://img.shields.io/badge/PROJECT-FF6B35?style=for-the-badge&amp;logo=googledocs&amp;logoColor=white"/>
+
+</td>
+<td align="center" width="42%">
+
+<img src="https://img.shields.io/badge/STACK-7C3AED?style=for-the-badge&amp;logo=stackoverflow&amp;logoColor=white"/>
+
+</td>
+<td align="center" width="24%">
+
+<img src="https://img.shields.io/badge/STATUS-3B82F6?style=for-the-badge&amp;logo=rocket&amp;logoColor=white"/>
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/GTA_IT-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=FF6B35"/>
+
+<br/><sub><b>Corporate PWA · CMS · Backoffice</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
+<br/>
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+[![Live](https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://gta-it.com)
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/GTA_Academy-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=7C3AED"/>
+
+<br/><sub><b>Training platform launch</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white)
+<br/>
+![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?style=flat-square&amp;logo=shadcnui&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+[![Live](https://img.shields.io/badge/LIVE-academy.gta--it.com-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://academy.gta-it.com)
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/NEXUS-0F172A?style=for-the-badge&amp;logo=turborepo&amp;logoColor=FF6B35"/>
+
+<br/><sub><b>Modular SaaS ERP for restaurants</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
+![Turborepo](https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&amp;logo=turborepo&amp;logoColor=white)
+<br/>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+<img src="https://img.shields.io/badge/IN_PROGRESS-F59E0B?style=for-the-badge&amp;logo=clockify&amp;logoColor=white" alt="In progress"/>
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/Kaza-0F172A?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=7C3AED"/>
+
+<br/><sub><b>Real estate · AI fraud detection</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
+<br/>
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+<img src="https://img.shields.io/badge/IN_PROGRESS-F59E0B?style=for-the-badge&amp;logo=clockify&amp;logoColor=white" alt="In progress"/>
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/ESOPA-0F172A?style=for-the-badge&amp;logo=wordpress&amp;logoColor=21759B"/>
+
+<br/><sub><b>NGO platform · DevOps infra</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&amp;logo=wordpress&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+<br/>
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&amp;logo=cloudflare&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+[![Live](https://img.shields.io/badge/LIVE-esopa.org-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://esopa.org)
+
+</td>
+</tr>
+
+<tr><td colspan="3"><br/></td></tr>
+
+<tr>
+<td align="center" valign="top">
+
+<img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=3B82F6"/>
+
+<br/><sub><b>Fullstack platform · CI/CD</b></sub>
+
+</td>
+<td align="center" valign="middle">
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
+![Express](https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white)
+<br/>
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white)
+![OVH](https://img.shields.io/badge/OVH_VPS-123F6D?style=flat-square&amp;logo=ovh&amp;logoColor=white)
+
+</td>
+<td align="center" valign="middle">
+
+[![Live](https://img.shields.io/badge/LIVE-barthez--kenwou.dev-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://barthez-kenwou.dev)
+
+</td>
+</tr>
+
+</table>
+
+</div>
 
 <br/>
 
@@ -287,13 +458,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=The%20Pipeline%20I%20Live%20By&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
-<br/>
-
 <div align="center">
 
 <sub><b>◈ THE ENGINEERING LOOP ◈</b></sub>
-
-<br/><br/>
 
 <table>
 <tr>
@@ -316,16 +483,6 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=gradient&amp;height=30&amp;section=footer&amp;text=automated%20%C2%B7%20secure%20%C2%B7%20measurable%20%C2%B7%20repeatable&amp;fontSize=12&amp;fontColor=FFFFFF" width="85%"/>
-
-<br/><br/>
-
-<pre>
- ╭──────────────────────────────────────────────────────────────────────────────╮
- │  feedback loop  ───────────────────────────────────────────────▶  IDEATE     │
- ╰──────────────────────────────────────────────────────────────────────────────╯
-</pre>
-
-</div>
 
 <br/>
 
@@ -372,16 +529,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/Clear_Communication-FF6B35?style=for-the-badge&amp;logo=slack&amp;logoColor=white"/>
 
-<br/><br/>
-
 <sub>Technical &amp; non-technical audiences</sub>
 
 </td>
 <td align="center" width="25%" valign="top">
 
 <img src="https://img.shields.io/badge/Team_Leadership-7C3AED?style=for-the-badge&amp;logo=teamspeak&amp;logoColor=white"/>
-
-<br/><br/>
 
 <sub>Mentoring · code review · delivery</sub>
 
@@ -390,16 +543,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/Adaptability-3B82F6?style=for-the-badge&amp;logo=lightbulb&amp;logoColor=white"/>
 
-<br/><br/>
-
 <sub>Fast learner · problem solver</sub>
 
 </td>
 <td align="center" width="25%" valign="top">
 
 <img src="https://img.shields.io/badge/Continuous_Growth-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
-
-<br/><br/>
 
 <sub>Curiosity · innovation · excellence</sub>
 
@@ -413,13 +562,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Let%27s%20Build%20Something%20Bold&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
-<br/>
-
 <div align="center">
 
 Open to **freelance missions**, **cloud architecture**, **full-stack products**, and **DevOps transformations**.
-
-<br/>
 
 [![Portfolio](https://img.shields.io/badge/Explore_My_Portfolio-FF6B35?style=for-the-badge&logo=googlechrome&logoColor=white)](https://barthez-kenwou.dev/)
 [![Blog](https://img.shields.io/badge/Read_My_Blog-7C3AED?style=for-the-badge&logo=hashnode&logoColor=white)](https://barthez-kenwou.dev/blog)
@@ -429,11 +574,9 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=14&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 
-<br/><br/>
-
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="74%"/>
 
-<br/>
+<br/><br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:FF6B35,50:7C3AED,100:0F172A&amp;height=100&amp;section=footer&amp;fontSize=14&amp;fontColor=FFFFFF&amp;text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&amp;animation=scaleIn" width="100%"/>
 
