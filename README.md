@@ -1127,6 +1127,156 @@ sequenceDiagram
 
 <br/>
 
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=40&amp;section=header&amp;text=Services%20%26%20Offers&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
+
+<br/>
+
+<sub><b>Freelance · architecture · delivery · training — transparent starting rates</b></sub>
+
+<br/><br/>
+
+<div align="center">
+
+<table width="90%">
+<tr>
+<td align="center" width="62%">
+
+<img src="https://img.shields.io/badge/SERVICE-FF6B35?style=for-the-badge&amp;logo=googledocs&amp;logoColor=white"/>
+
+</td>
+<td align="center" width="38%">
+
+<img src="https://img.shields.io/badge/STARTING_AT-7C3AED?style=for-the-badge&amp;logo=cashapp&amp;logoColor=white"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>AWS Cloud Architecture</b>
+<br/>
+<sub>Multi-AZ design · migration · FinOps · serverless · 99.99% HA</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_500€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>DevOps &amp; CI/CD</b>
+<br/>
+<sub>Pipelines · Docker/K8s · Terraform · monitoring · DevSecOps</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_400€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>Full Stack Development</b>
+<br/>
+<sub>React/Next.js · TypeScript · APIs · databases · automated tests</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_300€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>Audit &amp; Security</b>
+<br/>
+<sub>AWS audit · pentest · GDPR/SOC2 · action plan · team training</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_600€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>Performance Optimization</b>
+<br/>
+<sub>Profiling · DB tuning · Redis/CDN · auto-scaling · frontend bundle</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_350€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+<tr><td colspan="2"><br/></td></tr>
+
+<tr>
+<td align="left" valign="middle">
+
+<b>Consulting &amp; Training</b>
+<br/>
+<sub>Architecture reviews · AWS workshops · CI/CD coaching · mentoring</sub>
+
+</td>
+<td align="right" valign="middle">
+
+<img src="https://img.shields.io/badge/from_100€/h-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+
+</td>
+</tr>
+
+</table>
+
+<br/>
+
+<a href="https://wa.me/237655646688?text=Hi%20Barthez%2C%20I%27d%20like%20a%20quote%20for%20your%20services.">
+<img src="https://img.shields.io/badge/GET_A_QUOTE-64748B?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" alt="Get a quote"/>
+</a>
+&nbsp;
+<a href="https://wa.me/237655646688">
+<img src="https://img.shields.io/badge/WHATSAPP-25D366?style=for-the-badge&amp;logo=whatsapp&amp;logoColor=white" alt="WhatsApp"/>
+</a>
+&nbsp;
+<a href="https://barthez-kenwou.dev/services">
+<img src="https://img.shields.io/badge/FULL_SERVICES_PAGE-FF6B35?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Full services page"/>
+</a>
+
+<br/>
+
+<sub>Custom scopes · milestone-based billing · NDA available on request</sub>
+
+</div>
+
+<br/>
+
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Let%27s%20Build%20Something%20Bold&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <div align="center">
