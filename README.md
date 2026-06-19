@@ -483,9 +483,11 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 <br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=40&amp;section=header&amp;text=GitHub%20Pulse&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
+<br/>
 <br/>
 <br/>
 
@@ -498,6 +500,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
   <img src="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/output/github-contribution-grid-snake.svg" alt="Contribution Snake" width="100%"/>
 </picture>
 
+<br/>
 <br/>
 
 <img src="https://github-readme-stats.vercel.app/api?username=barthez-kenwou&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;icon_color=7C3AED&amp;text_color=FFFFFF&amp;rank_icon=percentile" alt="GitHub Stats" height="165"/>
@@ -569,7 +572,7 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=14&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=24&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="74%"/>
 
