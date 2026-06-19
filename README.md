@@ -102,7 +102,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=50&amp;section=header&amp;text=SCALE&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=50&amp;section=header&amp;text=SCALE&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
