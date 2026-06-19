@@ -19,7 +19,7 @@
 <tr>
 <td width="42%" valign="top" align="center">
 
-<img src="assets/profile.jpeg" alt="Barthez Kenwou" width="100%" style="border-radius: 16px;" />
+<img src="assets/profile.png" alt="Barthez Kenwou" width="100%" style="border-radius: 16px;" />
 
 <br/><br/>
 
@@ -39,8 +39,8 @@
 Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** turning ambitious ideas into production-grade systems. I operate at the intersection of **elegant code**, **cloud-native infrastructure**, and **reliable delivery**.
 
 ```diff
-+ CURRENTLY  → DevOps & Full Stack @ GTA IT · INTELEK · ZENORA
-+ BUILDING   → COMBO (SaaS ERP) · Kaza (PropTech + AI) · DevSecOps pipelines
++ CURRENTLY  → DevOps & Full Stack @ INTELEK · ZENORA
++ BUILDING   → NEXUS (SaaS ERP) · Kaza (PropTech + AI) · DevSecOps pipelines
 + TEACHING   → Full Stack & DevOps @ IT Engineering Factory / WorketYamo
 + AVAILABLE  → Freelance missions · Architecture consulting · Team mentoring
 ```
