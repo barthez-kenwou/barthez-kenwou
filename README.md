@@ -21,7 +21,7 @@
 
 <picture>
   <source srcset="assets/profile.webp" type="image/webp"/>
-  <img src="assets/profile.jpg" alt="Barthez Kenwou" width="100%" style="border-radius: 16px;"/>
+  <img src="assets/profile.jpg" alt="Barthez Kenwou" width="100%" style="border-radius: 20px;"/>
 </picture>
 
 <br/><br/>
