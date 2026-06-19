@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="90" viewBox="0 0 900 90" role="img" aria-label="Thanks for visiting">
+  <defs>
+    <linearGradient id="footGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="90" rx="8" fill="url(#footGrad)"/>
+  <text x="450" y="52" text-anchor="middle" fill="#FFFFFF" font-size="14" font-family="Segoe UI, system-ui, sans-serif">Thanks for visiting — let's connect and create something extraordinary.</text>
+</svg>

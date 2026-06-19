@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="44" viewBox="0 0 900 44" role="img" aria-label="Daily Dev Quote">
+  <rect width="900" height="44" rx="6" fill="#1E1B4B"/>
+  <rect x="0" y="20" width="900" height="2" fill="#FFFFFF" opacity="0.35"/>
+  <text x="450" y="28" text-anchor="middle" fill="#FFFFFF" font-size="17" font-family="Segoe UI, system-ui, sans-serif" font-weight="600" letter-spacing="0.5">Daily Dev Quote</text>
+</svg>
