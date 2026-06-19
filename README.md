@@ -1846,7 +1846,7 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=24&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 <br/>
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="85%"/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="68%"/>
 
 <br/>
 
