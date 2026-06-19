@@ -508,11 +508,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;text_color=FFFFFF&amp;layout=compact&amp;langs_count=8" alt="Top Languages" height="165"/>
 
 <br/>
+<br/>
 
 <img src="https://github-profile-trophy-kappa.vercel.app/?username=barthez-kenwou&amp;theme=dracula&amp;no-frame=true&amp;no-bg=true&amp;column=6&amp;margin-w=4&amp;margin-h=4" alt="Trophies" width="72%"/>
 
 </div>
 
+<br/>
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Soft%20Skills&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
@@ -571,8 +573,10 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 [![GitHub Repos](https://img.shields.io/badge/Browse_Repos-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/barthez-kenwou?tab=repositories)
 
 <br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=24&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
+<br/>
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="74%"/>
 
