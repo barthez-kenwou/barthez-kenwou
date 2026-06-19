@@ -66,7 +66,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <tr>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=50&amp;section=header&amp;text=BUILD&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=50&amp;section=header&amp;text=BUILD&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -84,7 +84,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=50&amp;section=header&amp;text=SHIP&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=50&amp;section=header&amp;text=SHIP&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
