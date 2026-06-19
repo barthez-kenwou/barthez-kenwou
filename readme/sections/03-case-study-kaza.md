@@ -27,89 +27,13 @@
 
 **Ecosystem architecture — web, mobile &amp; AI services**
 
-```mermaid
-flowchart LR
-    classDef accent fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef ai fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef data fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph Apps["User-facing apps"]
-        RN["React Native"]
-        WEB["Next.js Web"]
-        ADM["Admin Panel"]
-    end
-
-    subgraph Gateway["API layer"]
-        GQL["GraphQL Gateway"]
-        API["REST Services"]
-    end
-
-    subgraph Intel["Fraud Intelligence"]
-        IMG["Image Authenticity"]
-        PRC["Price Benchmark"]
-        BEH["Behavior Signals"]
-        SCR["Trust Score Engine"]
-    end
-
-    subgraph Store["Data platform"]
-        PG[("PostgreSQL")]
-        RD[("Redis")]
-        SRCH["Search Index"]
-    end
-
-    subgraph Infra["Cloud · DevOps"]
-        K8S["Kubernetes · AWS"]
-        MON["Prometheus · Loki · Grafana"]
-    end
-
-    RN --> GQL
-    WEB --> GQL
-    ADM --> API
-    GQL --> API
-    API --> Intel
-    IMG --> SCR
-    PRC --> SCR
-    BEH --> SCR
-    API --> Store
-    API --> K8S
-    MON --> K8S
-
-    class RN,WEB accent
-    class IMG,PRC,BEH,SCR ai
-    class PG,RD,SRCH data
-```
+<!-- mermaid: case-studies/kaza-ecosystem-architecture.mmd -->
 
 <br/>
 
 **AI fraud detection pipeline**
 
-```mermaid
-flowchart TD
-    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
-    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff
-    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
-
-    A["New listing submitted"] --> B{Sufficient credits?}
-    B -->|No| R1["Reject · request top-up"]
-    B -->|Yes| C["AI moderation pipeline"]
-
-    C --> D["Image authenticity check"]
-    C --> E["Price vs. market benchmark"]
-    C --> F["User behavior analysis"]
-
-    D --> G{Aggregate risk score}
-    E --> G
-    F --> G
-
-    G -->|Low risk| H["Publish listing"]
-    H --> I["WhatsApp direct CTA"]
-    G -->|Medium| J["Flag for manual review"]
-    G -->|High| K["Block · alert ops team"]
-
-    class H,I ok
-    class J warn
-    class K,R1 bad
-```
+<!-- mermaid: case-studies/kaza-fraud-detection-pipeline.mmd -->
 
 <br/>
 

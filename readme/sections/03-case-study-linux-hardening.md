@@ -29,136 +29,19 @@
 
 **Defense-in-depth architecture — multi-layer security stack**
 
-```mermaid
-flowchart TB
-    classDef edge fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef net fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef host fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef app fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef obs fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph Edge["Layer 1 — Edge protection"]
-        CF["Cloudflare CDN"]
-        WAF["Cloudflare WAF"]
-        DDoS["DDoS mitigation"]
-    end
-
-    subgraph Network["Layer 2 — Network perimeter"]
-        UFW["UFW firewall"]
-        IPT["iptables rules"]
-        CSF["CSF policy engine"]
-    end
-
-    subgraph Intrusion["Layer 3 — Intrusion prevention"]
-        F2B["Fail2Ban"]
-        CRW["CrowdSec"]
-        ALERT["Real-time alerts"]
-    end
-
-    subgraph Host["Layer 4 — Host hardening"]
-        SSH["Hardened SSH · keys only"]
-        SYS["sysctl kernel tuning"]
-        PERM["Strict file permissions"]
-        AUTO["Unattended security updates"]
-    end
-
-    subgraph Runtime["Layer 5 — Application runtime"]
-        DOCK["Docker · secured daemon"]
-        APPS["Production containers"]
-        NGINX["Nginx reverse proxy"]
-    end
-
-    subgraph Monitor["Layer 6 — Monitoring"]
-        LOGS["Centralized logs"]
-        REP["Daily security reports"]
-        NTP["NTP time sync"]
-    end
-
-    CF --> WAF --> DDoS --> UFW
-    UFW --> IPT --> CSF
-    CSF --> F2B
-    CSF --> CRW
-    F2B --> ALERT
-    CRW --> ALERT
-    UFW --> SSH --> SYS --> PERM --> AUTO
-    AUTO --> DOCK --> APPS
-    NGINX --> APPS
-    APPS --> LOGS --> REP
-    SYS --> NTP
-
-    class CF,WAF,DDoS edge
-    class UFW,IPT,CSF net
-    class F2B,CRW,SSH,SYS host
-    class DOCK,APPS,NGINX app
-    class LOGS,REP,ALERT obs
-```
+<!-- mermaid: case-studies/linux-hardening-defense-in-depth.mmd -->
 
 <br/>
 
 **Attack mitigation pipeline — inbound threat to block**
 
-```mermaid
-flowchart LR
-    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
-    classDef check fill:#F59E0B,stroke:#0F172A,color:#fff
-    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
-
-    A["Inbound request"] --> B{"Cloudflare WAF match?"}
-    B -->|Yes| X1["Block at edge"]
-    B -->|No| C{"UFW / CSF allow?"}
-    C -->|No| X2["Drop packet"]
-    C -->|Yes| D{"SSH brute force?"}
-    D -->|Yes| E["Fail2Ban ban IP"]
-    D -->|No| F{"Scan pattern?"}
-    F -->|Yes| G["CrowdSec decision"]
-    G --> H["Community blocklist"]
-    F -->|No| I["Allow to service"]
-    I --> J["Log + monitor"]
-    E --> J
-    H --> J
-
-    class X1,X2 bad
-    class B,C,D,F,G check
-    class I,J ok
-```
+<!-- mermaid: case-studies/linux-hardening-attack-mitigation.mmd -->
 
 <br/>
 
 **SSH access hardening — authentication flow**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Attacker as External actor
-    participant CF as Cloudflare WAF
-    participant FW as UFW CSF firewall
-    participant F2B as Fail2Ban
-    participant SSH as Hardened SSH
-    participant SRV as Ubuntu server
-    participant AL as Alert system
-
-    Attacker->>CF: Connection attempt
-    CF->>CF: WAF rule evaluation
-    alt Malicious pattern detected
-        CF-->>Attacker: Blocked at edge
-        CF->>AL: WAF alert
-    else Traffic allowed
-        CF->>FW: Forward to origin
-        FW->>FW: Port and IP policy check
-        alt Access denied
-            FW-->>Attacker: Connection refused
-            FW->>F2B: Log failed attempt
-            F2B->>AL: Ban threshold alert
-        else Access permitted
-            FW->>SSH: Handshake request
-            SSH->>SSH: Key auth only no root login
-            SSH-->>Attacker: Deny if invalid credentials
-            SSH->>F2B: Increment fail counter
-            SSH->>SRV: Grant limited session
-            SRV->>AL: Login audit log
-        end
-    end
-```
+<!-- mermaid: case-studies/linux-hardening-ssh-flow.mmd -->
 
 <br/>
 

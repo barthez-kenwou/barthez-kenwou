@@ -1,0 +1,30 @@
+%% File    : readme/mermaid/case-studies/devsecops-artifact-lifecycle.mmd
+%% Diagram : DevSecOps — Signed artifact lifecycle
+%% Used in : readme/sections/03-case-study-devsecops.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant Dev as Developer
+    participant GHA as GitHub Actions
+    participant SQ as SonarQube
+    participant TV as Trivy / Grype
+    participant SY as Syft + Cosign
+    participant HR as Harbor Registry
+    participant VPS as Production VPS
+    participant OBS as Grafana / Slack
+
+    Dev->>GHA: Push tagged release
+    GHA->>SQ: SAST quality gate
+    SQ-->>GHA: Pass / fail
+    GHA->>TV: SCA + image vulnerability scan
+    TV-->>GHA: CVE report
+    GHA->>SY: Generate SBOM + sign artifact
+    SY->>HR: Store signed image + provenance
+    GHA->>VPS: Deploy to staging
+    VPS-->>GHA: Health check OK
+    GHA->>Dev: Manual production gate
+    Dev->>GHA: Approve release
+    GHA->>VPS: Zero-downtime rollout
+    VPS->>OBS: DORA metrics + security event
+    OBS-->>Dev: Deploy confirmed · MTTR tracked

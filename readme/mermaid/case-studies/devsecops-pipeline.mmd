@@ -1,0 +1,60 @@
+%% File    : readme/mermaid/case-studies/devsecops-pipeline.mmd
+%% Diagram : DevSecOps — Industrial multi-environment pipeline
+%% Used in : readme/sections/03-case-study-devsecops.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart TB
+    classDef dev fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef sec fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef gate fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef prod fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Dev["Developer workflow"]
+        CODE["Node.js / Java repos"]
+        PR["Pull Request"]
+        PUSH["Merge to main"]
+    end
+
+    subgraph CI["GitHub Actions — build stage"]
+        LINT["Lint · type check"]
+        UNIT["Unit · integration tests"]
+        SAST["SonarQube SAST"]
+        SCA["Dependency SCA"]
+        TRIVY["Trivy FS + image scan"]
+    end
+
+    subgraph Supply["Supply chain controls"]
+        SBOM["Syft SBOM generation"]
+        GRYPE["Grype vulnerability scan"]
+        POLICY{"CVSS &gt; 7 or unsigned?"}
+        SIGN["Cosign / Sigstore sign"]
+        HARBOR["Harbor secure registry"]
+    end
+
+    subgraph Deploy["Multi-env deployment"]
+        STG["Staging · DAST smoke"]
+        GATE["Manual release gate"]
+        PROD["Production VPS · zero downtime"]
+        ROLL["Automated rollback"]
+    end
+
+    subgraph Ops["Observability"]
+        PROM["Prometheus metrics"]
+        GRAF["Grafana dashboards"]
+        SLACK["Slack security alerts"]
+    end
+
+    CODE --> PR --> PUSH
+    PUSH --> LINT --> UNIT --> SAST --> SCA --> TRIVY
+    TRIVY --> SBOM --> GRYPE --> POLICY
+    POLICY -->|Fail| BLOCK["Block build"]
+    POLICY -->|Pass| SIGN --> HARBOR
+    HARBOR --> STG --> GATE --> PROD
+    PROD --> ROLL
+    PROD --> PROM --> GRAF
+    POLICY --> SLACK
+
+    class CODE,PR,PUSH dev
+    class SAST,SCA,TRIVY,SBOM,GRYPE,SIGN sec
+    class GATE,POLICY gate
+    class PROD,HARBOR prod

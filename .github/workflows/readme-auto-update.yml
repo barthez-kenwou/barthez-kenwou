@@ -12,6 +12,7 @@ on:
       - "scripts/update-readme.mjs"
       - "scripts/build-readme.mjs"
       - "readme/sections/**"
+      - "readme/mermaid/**"
       - "readme/manifest.json"
       - ".github/workflows/readme-auto-update.yml"
 

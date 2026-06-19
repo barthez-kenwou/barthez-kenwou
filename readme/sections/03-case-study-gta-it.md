@@ -29,70 +29,13 @@
 
 **3-tier containerized architecture**
 
-```mermaid
-flowchart TB
-    classDef accent fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef core fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef ops fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph PWA["React PWA — gta-it.com"]
-        CORP["Corporate pages"]
-        BLOG["Blog · Newsletter"]
-        PROJ["Project showcase"]
-        CAREER["Careers hub"]
-        QUOTE["Dynamic quote engine"]
-    end
-
-    subgraph API["Node.js · Express API"]
-        CMS["CMS controllers"]
-        AUTH["Auth · RBAC"]
-        CACHE["Redis cache layer"]
-    end
-
-    subgraph DB["Persistence"]
-        MONGO[("MongoDB · Prisma ORM")]
-    end
-
-    subgraph Prod["Production stack"]
-        NGX["Nginx reverse proxy"]
-        VPS["Hostinger VPS"]
-        CICD["GitHub Actions CI/CD"]
-    end
-
-    PWA -->|REST API| API
-    API --> CACHE
-    API --> MONGO
-    NGX --> PWA
-    NGX --> API
-    CICD --> VPS
-    VPS --> NGX
-
-    class CORP,BLOG,QUOTE accent
-    class CMS,AUTH core
-    class NGX,CICD ops
-```
+<!-- mermaid: case-studies/gta-it-three-tier-architecture.mmd -->
 
 <br/>
 
 **Content publishing workflow**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Team as Marketing team
-    participant BO as Custom backoffice
-    participant API as Express API
-    participant Cache as Redis
-    participant Site as Public PWA
-
-    Team->>BO: Create or update content
-    BO->>API: Authenticated REST request
-    API->>API: Validate schema · persist
-    API->>Cache: Invalidate stale entries
-    Site->>API: SSR fetch + dynamic meta
-    API-->>Site: Fresh content
-    Site-->>Team: Live on gta-it.com
-```
+<!-- mermaid: case-studies/gta-it-content-publishing.mmd -->
 
 <br/>
 

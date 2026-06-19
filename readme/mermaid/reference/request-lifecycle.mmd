@@ -1,0 +1,32 @@
+%% File    : readme/mermaid/reference/request-lifecycle.mmd
+%% Diagram : Reference — Request lifecycle (user to data)
+%% Used in : readme/sections/06-reference-architecture.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant U as User Device
+    participant E as Edge CDN + WAF
+    participant F as Next.js Frontend
+    participant B as Express API
+    participant C as Redis / NodeCache
+    participant D as PostgreSQL / MongoDB
+    participant O as Observability Stack
+
+    U->>E: HTTPS request
+    E->>E: WAF rules · DDoS filter · cache check
+    E->>F: Forward (cache miss)
+    F->>F: SSR · SEO meta · hydration
+    F->>B: API call (JWT attached)
+    B->>B: Auth · rate limit · validation
+    B->>C: Cache lookup
+    alt Cache hit
+        C-->>B: Cached payload
+    else Cache miss
+        B->>D: Query via ORM
+        D-->>B: Data result
+        B->>C: Write-through cache
+    end
+    B-->>F: JSON response
+    F-->>U: Rendered UI
+    B->>O: Trace · metrics · structured logs

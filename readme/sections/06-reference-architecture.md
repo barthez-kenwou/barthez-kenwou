@@ -21,180 +21,19 @@
 
 **Full-stack reference architecture — layered system design**
 
-```mermaid
-flowchart TB
-    classDef client fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef edge fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef fe fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef be fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef data fill:#4169E1,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef ops fill:#E6522C,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph L1["01 · CLIENT LAYER"]
-        USR["Users"]
-        WEB["Web Browsers"]
-        MOB["Mobile · React Native"]
-        DESK["Desktop · PWA"]
-        USR --> WEB
-        USR --> MOB
-        USR --> DESK
-    end
-
-    subgraph L2["02 · EDGE LAYER"]
-        CF["Cloudflare CDN"]
-        WAF["Cloudflare WAF"]
-        DDoS["DDoS Protection"]
-        NGX["Nginx Reverse Proxy"]
-        TLS["TLS Termination · HTTP/2"]
-        CF --> WAF
-        WAF --> DDoS
-        DDoS --> NGX
-        NGX --> TLS
-    end
-
-    subgraph L3["03 · FRONTEND APPLICATION"]
-        NEXT["React · Next.js"]
-        TS["TypeScript"]
-        UI["Tailwind · shadcn/ui"]
-        SEO["SEO Booster · SSR · Meta"]
-        STATE["Zustand · State Mgmt"]
-        PWA["PWA · Service Worker"]
-        UX["Framer Motion · UX"]
-        NEXT --> TS
-        NEXT --> UI
-        NEXT --> SEO
-        NEXT --> STATE
-        NEXT --> PWA
-        NEXT --> UX
-    end
-
-    subgraph L4["04 · BACKEND APPLICATION"]
-        NODE["Node.js · Express"]
-        API["REST · GraphQL APIs"]
-        AUTH["JWT · RBAC · Helmet"]
-        RATE["Rate Limit · CORS · Validation"]
-        PERF["Performance Layer"]
-        CLU["Clustering · Worker Threads"]
-        LINT["ESLint · Prettier · Best Practices"]
-        C1["Redis Cache · L2"]
-        C2["NodeCache · L1"]
-        NODE --> API
-        NODE --> AUTH
-        AUTH --> RATE
-        NODE --> PERF
-        PERF --> CLU
-        PERF --> LINT
-        API --> C1
-        API --> C2
-    end
-
-    subgraph L5["05 · DATA LAYER"]
-        ORM["Prisma · Mongoose ORM"]
-        PG[("PostgreSQL")]
-        MG[("MongoDB")]
-        S3["AWS S3 · Object Storage"]
-        BKP["Automated Backups"]
-        ORM --> PG
-        ORM --> MG
-        S3 --> BKP
-    end
-
-    subgraph L6["06 · DEVOPS · PLATFORM"]
-        GHA["GitHub Actions CI/CD"]
-        DOCK["Docker · Multi-stage Builds"]
-        K8S["Kubernetes · AWS EKS/ECS"]
-        TF["Terraform · IaC"]
-        PROM["Prometheus Metrics"]
-        LOKI["Loki · Centralized Logs"]
-        GRAF["Grafana Dashboards"]
-        ALT["Alertmanager · PagerDuty"]
-        SNYK["Snyk · SBOM · SAST"]
-        DEP["Blue/Green · Rolling Deploy"]
-        GHA --> DOCK
-        DOCK --> K8S
-        TF --> K8S
-        GHA --> SNYK
-        K8S --> DEP
-        PROM --> GRAF
-        LOKI --> GRAF
-        ALT --> GRAF
-    end
-
-    L1 --> L2
-    L2 --> L3
-    L3 -->|HTTPS / API| L4
-    L4 --> L5
-    L6 -.->|deploy + monitor| L3
-    L6 -.->|deploy + monitor| L4
-    L6 -.->|deploy + monitor| L5
-
-    class USR,WEB,MOB,DESK client
-    class CF,WAF,DDoS,NGX,TLS edge
-    class NEXT,TS,UI,SEO,STATE,PWA,UX fe
-    class NODE,API,AUTH,RATE,PERF,CLU,LINT,C1,C2 be
-    class ORM,PG,MG,S3,BKP data
-    class GHA,DOCK,K8S,TF,PROM,LOKI,GRAF,ALT,SNYK,DEP ops
-```
+<!-- mermaid: reference/full-stack-architecture.mmd -->
 
 <br/>
 
 **CI/CD delivery pipeline — commit to production**
 
-```mermaid
-flowchart LR
-    classDef step fill:#2088FF,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef gate fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    PUSH["Git Push / PR"] --> LINT["Lint · Type Check"]
-    LINT --> UNIT["Unit · Integration Tests"]
-    UNIT --> E2E["Cypress E2E"]
-    E2E --> SEC["SAST · SBOM · Snyk"]
-    SEC --> BUILD["Docker Build · Scan"]
-    BUILD --> STG["Staging Deploy"]
-    STG --> SMOKE["Smoke · Load Tests"]
-    SMOKE --> PROD["Production Deploy"]
-    PROD --> SLO["SLO · Error Rate Check"]
-    SLO --> OBS["Metrics · Logs · Alerts"]
-
-    class PUSH,LINT,UNIT,E2E,BUILD step
-    class SEC gate
-    class STG,SMOKE,PROD,SLO,OBS warn
-```
+<!-- mermaid: reference/cicd-delivery-pipeline.mmd -->
 
 <br/>
 
 **Request lifecycle — user hit to data response**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant U as User Device
-    participant E as Edge CDN + WAF
-    participant F as Next.js Frontend
-    participant B as Express API
-    participant C as Redis / NodeCache
-    participant D as PostgreSQL / MongoDB
-    participant O as Observability Stack
-
-    U->>E: HTTPS request
-    E->>E: WAF rules · DDoS filter · cache check
-    E->>F: Forward (cache miss)
-    F->>F: SSR · SEO meta · hydration
-    F->>B: API call (JWT attached)
-    B->>B: Auth · rate limit · validation
-    B->>C: Cache lookup
-    alt Cache hit
-        C-->>B: Cached payload
-    else Cache miss
-        B->>D: Query via ORM
-        D-->>B: Data result
-        B->>C: Write-through cache
-    end
-    B-->>F: JSON response
-    F-->>U: Rendered UI
-    B->>O: Trace · metrics · structured logs
-```
+<!-- mermaid: reference/request-lifecycle.mmd -->
 
 <br/>
 

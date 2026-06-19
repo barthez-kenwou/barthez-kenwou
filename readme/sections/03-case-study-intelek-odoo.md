@@ -30,119 +30,19 @@
 
 **Cloud ERP infrastructure — Kubernetes topology**
 
-```mermaid
-flowchart TB
-    classDef edge fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef k8s fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef data fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef ops fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph Users["INTELEK teams · ~15 users"]
-        FIN["Finance"]
-        PM["Project managers"]
-        HR["HR · procurement"]
-        SALES["Sales"]
-    end
-
-    subgraph Edge["Edge layer"]
-        DNS["DNS · TLS"]
-        NGX["Nginx reverse proxy"]
-    end
-
-    subgraph K8S["Kubernetes cluster · VPS"]
-        ING["Ingress controller"]
-        subgraph OdooStack["Odoo workload"]
-            WEB["Odoo web pods"]
-            WORK["Odoo workers"]
-            CRON["Scheduled jobs"]
-        end
-        subgraph Modules["Business modules"]
-            PROJ["Project management"]
-            ACCT["Accounting"]
-            STOCK["Inventory · purchases"]
-            HRMOD["HR · payroll"]
-        end
-    end
-
-    subgraph Data["Data platform"]
-        PG[("PostgreSQL · persistent volume")]
-        FILE["Filestore volume"]
-        MINIO[("MinIO backups")]
-    end
-
-    subgraph Sec["Security and ops"]
-        HARD["Server hardening"]
-        BK["Backup automation"]
-        MON["Health monitoring"]
-    end
-
-    Users --> DNS --> NGX --> ING
-    ING --> WEB --> WORK
-    WEB --> Modules
-    WORK --> PG
-    WEB --> FILE
-    CRON --> PG
-    PG --> BK --> MINIO
-    HARD --> K8S
-    MON --> K8S
-
-    class FIN,PM,HR,SALES edge
-    class WEB,WORK,CRON,Modules k8s
-    class PG,FILE,MINIO data
-    class HARD,BK,MON ops
-```
+<!-- mermaid: case-studies/intelek-kubernetes-topology.mmd -->
 
 <br/>
 
 **Odoo business modules — construction company workflows**
 
-```mermaid
-flowchart LR
-    classDef mod fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef flow fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    A["New BTP project"] --> B["Project module"]
-    B --> C["Budget and planning"]
-    C --> D["Procurement · purchases"]
-    D --> E["Inventory · stock"]
-    E --> F["Invoicing · accounting"]
-    F --> G["HR · timesheets"]
-    G --> H["Reporting · dashboards"]
-    B --> I["Sales · CRM pipeline"]
-    I --> D
-
-    class B,C,D,E,F,G,I mod
-    class A,H flow
-```
+<!-- mermaid: case-studies/intelek-odoo-modules.mmd -->
 
 <br/>
 
 **Backup &amp; disaster recovery workflow**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Odoo as Odoo application
-    participant PG as PostgreSQL
-    participant FS as Filestore volume
-    participant Job as Backup cron job
-    participant MIN as MinIO object storage
-    participant OPS as DevOps operator
-
-    Odoo->>PG: Transactional writes
-    Odoo->>FS: Attachments and documents
-    Job->>PG: pg_dump snapshot
-    Job->>FS: Archive filestore
-    Job->>MIN: Upload encrypted backup
-    MIN-->>Job: Storage confirmation
-    Job->>OPS: Success notification
-    alt Restore drill
-        OPS->>MIN: Fetch backup artifact
-        MIN->>PG: Restore database
-        MIN->>FS: Restore files
-        PG-->>Odoo: Service validated
-    end
-```
+<!-- mermaid: case-studies/intelek-backup-disaster-recovery.mmd -->
 
 <br/>
 

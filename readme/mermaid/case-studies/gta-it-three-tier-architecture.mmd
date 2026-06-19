@@ -1,0 +1,45 @@
+%% File    : readme/mermaid/case-studies/gta-it-three-tier-architecture.mmd
+%% Diagram : GTA IT — 3-tier containerized architecture
+%% Used in : readme/sections/03-case-study-gta-it.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart TB
+    classDef accent fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef core fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef ops fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph PWA["React PWA — gta-it.com"]
+        CORP["Corporate pages"]
+        BLOG["Blog · Newsletter"]
+        PROJ["Project showcase"]
+        CAREER["Careers hub"]
+        QUOTE["Dynamic quote engine"]
+    end
+
+    subgraph API["Node.js · Express API"]
+        CMS["CMS controllers"]
+        AUTH["Auth · RBAC"]
+        CACHE["Redis cache layer"]
+    end
+
+    subgraph DB["Persistence"]
+        MONGO[("MongoDB · Prisma ORM")]
+    end
+
+    subgraph Prod["Production stack"]
+        NGX["Nginx reverse proxy"]
+        VPS["Hostinger VPS"]
+        CICD["GitHub Actions CI/CD"]
+    end
+
+    PWA -->|REST API| API
+    API --> CACHE
+    API --> MONGO
+    NGX --> PWA
+    NGX --> API
+    CICD --> VPS
+    VPS --> NGX
+
+    class CORP,BLOG,QUOTE accent
+    class CMS,AUTH core
+    class NGX,CICD ops

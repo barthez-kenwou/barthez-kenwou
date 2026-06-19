@@ -1,0 +1,36 @@
+%% File    : readme/mermaid/case-studies/linux-hardening-ssh-flow.mmd
+%% Diagram : Linux Hardening — SSH authentication flow
+%% Used in : readme/sections/03-case-study-linux-hardening.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant Attacker as External actor
+    participant CF as Cloudflare WAF
+    participant FW as UFW CSF firewall
+    participant F2B as Fail2Ban
+    participant SSH as Hardened SSH
+    participant SRV as Ubuntu server
+    participant AL as Alert system
+
+    Attacker->>CF: Connection attempt
+    CF->>CF: WAF rule evaluation
+    alt Malicious pattern detected
+        CF-->>Attacker: Blocked at edge
+        CF->>AL: WAF alert
+    else Traffic allowed
+        CF->>FW: Forward to origin
+        FW->>FW: Port and IP policy check
+        alt Access denied
+            FW-->>Attacker: Connection refused
+            FW->>F2B: Log failed attempt
+            F2B->>AL: Ban threshold alert
+        else Access permitted
+            FW->>SSH: Handshake request
+            SSH->>SSH: Key auth only no root login
+            SSH-->>Attacker: Deny if invalid credentials
+            SSH->>F2B: Increment fail counter
+            SSH->>SRV: Grant limited session
+            SRV->>AL: Login audit log
+        end
+    end

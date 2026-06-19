@@ -1,0 +1,24 @@
+%% File    : readme/mermaid/reference/cicd-delivery-pipeline.mmd
+%% Diagram : Reference — CI/CD delivery pipeline
+%% Used in : readme/sections/06-reference-architecture.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart LR
+    classDef step fill:#2088FF,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef gate fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    PUSH["Git Push / PR"] --> LINT["Lint · Type Check"]
+    LINT --> UNIT["Unit · Integration Tests"]
+    UNIT --> E2E["Cypress E2E"]
+    E2E --> SEC["SAST · SBOM · Snyk"]
+    SEC --> BUILD["Docker Build · Scan"]
+    BUILD --> STG["Staging Deploy"]
+    STG --> SMOKE["Smoke · Load Tests"]
+    SMOKE --> PROD["Production Deploy"]
+    PROD --> SLO["SLO · Error Rate Check"]
+    SLO --> OBS["Metrics · Logs · Alerts"]
+
+    class PUSH,LINT,UNIT,E2E,BUILD step
+    class SEC gate
+    class STG,SMOKE,PROD,SLO,OBS warn

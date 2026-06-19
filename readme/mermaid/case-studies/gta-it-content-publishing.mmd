@@ -1,0 +1,20 @@
+%% File    : readme/mermaid/case-studies/gta-it-content-publishing.mmd
+%% Diagram : GTA IT — Content publishing workflow
+%% Used in : readme/sections/03-case-study-gta-it.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant Team as Marketing team
+    participant BO as Custom backoffice
+    participant API as Express API
+    participant Cache as Redis
+    participant Site as Public PWA
+
+    Team->>BO: Create or update content
+    BO->>API: Authenticated REST request
+    API->>API: Validate schema · persist
+    API->>Cache: Invalidate stale entries
+    Site->>API: SSR fetch + dynamic meta
+    API-->>Site: Fresh content
+    Site-->>Team: Live on gta-it.com

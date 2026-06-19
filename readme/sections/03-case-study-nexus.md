@@ -27,80 +27,13 @@
 
 **System architecture — modular monolith on AWS**
 
-```mermaid
-flowchart TB
-    classDef accent fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef core fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef data fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph Clients["Client surfaces"]
-        LP["SaaS Landing · SEO"]
-        PWA["Restaurant PWA"]
-        KDS["Kitchen Display"]
-        STF["Staff · Admin portals"]
-    end
-
-    subgraph Nexus["NEXUS Core — Modular Monolith"]
-        GW["API Gateway"]
-        TC["Tenant Context"]
-        subgraph Domains["Domain modules"]
-            ORD["Orders"]
-            INV["Inventory"]
-            CRM["CRM"]
-            POS["POS"]
-            ACC["Accounting"]
-        end
-        BILL["Billing Engine"]
-    end
-
-    subgraph Platform["Data + Platform"]
-        PG[("PostgreSQL")]
-        RD[("Redis")]
-        PAY["Payment Hub"]
-    end
-
-    subgraph Ops["AWS · DevOps"]
-        CICD["GitHub Actions"]
-        OBS["Monitoring · Observability"]
-    end
-
-    LP --> GW
-    PWA --> GW
-    KDS --> GW
-    STF --> GW
-    GW --> TC
-    TC --> Domains
-    Domains --> PG
-    Domains --> RD
-    BILL --> PAY
-    CICD --> Nexus
-    OBS --> Nexus
-
-    class LP,PWA accent
-    class GW,TC,BILL core
-    class PG,RD,PAY data
-```
+<!-- mermaid: case-studies/nexus-system-architecture.mmd -->
 
 <br/>
 
 **Tenant onboarding &amp; module activation**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Owner as Restaurant Owner
-    participant SaaS as NEXUS Platform
-    participant Pay as Payment Hub
-    participant Mod as Module Registry
-    participant App as Tenant Workspace
-
-    Owner->>SaaS: Register + pick modules
-    SaaS->>Pay: Mobile Money / Stripe / Bank
-    Pay-->>SaaS: Subscription confirmed
-    SaaS->>Mod: Provision enabled modules
-    Mod->>App: Spin up tenant context
-    App-->>Owner: PWA ready — orders, stock, CRM live
-```
+<!-- mermaid: case-studies/nexus-tenant-onboarding.mmd -->
 
 <br/>
 

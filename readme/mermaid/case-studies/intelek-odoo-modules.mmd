@@ -1,0 +1,21 @@
+%% File    : readme/mermaid/case-studies/intelek-odoo-modules.mmd
+%% Diagram : INTELEK — Odoo business modules workflow
+%% Used in : readme/sections/03-case-study-intelek-odoo.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart LR
+    classDef mod fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef flow fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    A["New BTP project"] --> B["Project module"]
+    B --> C["Budget and planning"]
+    C --> D["Procurement · purchases"]
+    D --> E["Inventory · stock"]
+    E --> F["Invoicing · accounting"]
+    F --> G["HR · timesheets"]
+    G --> H["Reporting · dashboards"]
+    B --> I["Sales · CRM pipeline"]
+    I --> D
+
+    class B,C,D,E,F,G,I mod
+    class A,H flow

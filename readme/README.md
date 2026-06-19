@@ -7,13 +7,17 @@ This repository uses a **modular README architecture**. GitHub only renders the 
 ```
 readme/
 ├── manifest.json          # Section order and metadata
+├── mermaid/               # Mermaid diagram source files (.mmd)
+│   ├── manifest.json      # Diagram catalog (file, title, usedIn)
+│   ├── case-studies/      # Per-project architecture diagrams
+│   └── reference/         # Global reference architecture diagrams
 ├── sections/              # One file per logical block
 │   ├── 00-hero.md
 │   ├── 02-signature-projects.md   ← auto-synced (project status badges)
 │   ├── 09-blog.md                 ← auto-synced (featured blog badges)
 │   └── ...
 scripts/
-├── build-readme.mjs       # Assembles sections → README.md
+├── build-readme.mjs       # Assembles sections + mermaid imports → README.md
 └── update-readme.mjs      # Updates auto markers, then rebuilds
 data/
 └── projects.json          # Project status + featured blog slugs
@@ -21,9 +25,9 @@ data/
 
 ## Workflow
 
-1. Edit the relevant file under `readme/sections/`.
+1. Edit the relevant file under `readme/sections/` and/or `readme/mermaid/`.
 2. Run `node scripts/build-readme.mjs` to regenerate root `README.md`.
-3. Commit **both** the section file(s) and `README.md`.
+3. Commit **section files**, **mermaid files**, and `README.md`.
 
 Do **not** edit root `README.md` directly — it is generated and includes a header comment stating this.
 
@@ -45,6 +49,30 @@ The GitHub Action (`.github/workflows/readme-auto-update.yml`) runs daily and on
 3. Run `node scripts/build-readme.mjs`.
 
 Each section file should start with an HTML comment block documenting its purpose (stripped from the published README).
+
+## Mermaid diagrams
+
+Diagrams live in `readme/mermaid/` as standalone `.mmd` files. Section files reference them via import directives:
+
+```markdown
+**System architecture — modular monolith on AWS**
+
+<!-- mermaid: case-studies/nexus-system-architecture.mmd -->
+```
+
+At build time, `scripts/build-readme.mjs` inlines each directive as a fenced ` ```mermaid ` block. Leading `%%` comment lines in `.mmd` files are stripped from the published output (they remain in source for documentation).
+
+| Folder | Purpose |
+|--------|---------|
+| `mermaid/case-studies/` | Architecture diagrams tied to Deep Dive case studies |
+| `mermaid/reference/` | Global reference architecture diagrams |
+
+To add a new diagram:
+
+1. Create `readme/mermaid/{case-studies|reference}/your-diagram.mmd`
+2. Add an entry to `readme/mermaid/manifest.json`
+3. Place `<!-- mermaid: path/to/your-diagram.mmd -->` in the target section file
+4. Run `node scripts/build-readme.mjs`
 
 ## GitHub rendering constraints
 

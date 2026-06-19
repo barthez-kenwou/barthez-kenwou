@@ -1,0 +1,27 @@
+%% File    : readme/mermaid/case-studies/linux-hardening-attack-mitigation.mmd
+%% Diagram : Linux Hardening — Attack mitigation pipeline
+%% Used in : readme/sections/03-case-study-linux-hardening.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart LR
+    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
+    classDef check fill:#F59E0B,stroke:#0F172A,color:#fff
+    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
+
+    A["Inbound request"] --> B{"Cloudflare WAF match?"}
+    B -->|Yes| X1["Block at edge"]
+    B -->|No| C{"UFW / CSF allow?"}
+    C -->|No| X2["Drop packet"]
+    C -->|Yes| D{"SSH brute force?"}
+    D -->|Yes| E["Fail2Ban ban IP"]
+    D -->|No| F{"Scan pattern?"}
+    F -->|Yes| G["CrowdSec decision"]
+    G --> H["Community blocklist"]
+    F -->|No| I["Allow to service"]
+    I --> J["Log + monitor"]
+    E --> J
+    H --> J
+
+    class X1,X2 bad
+    class B,C,D,F,G check
+    class I,J ok

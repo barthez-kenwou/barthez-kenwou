@@ -30,125 +30,19 @@
 
 **Industrial DevSecOps pipeline — multi-environment supply chain**
 
-```mermaid
-flowchart TB
-    classDef dev fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef sec fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef gate fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
-    classDef prod fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
-
-    subgraph Dev["Developer workflow"]
-        CODE["Node.js / Java repos"]
-        PR["Pull Request"]
-        PUSH["Merge to main"]
-    end
-
-    subgraph CI["GitHub Actions — build stage"]
-        LINT["Lint · type check"]
-        UNIT["Unit · integration tests"]
-        SAST["SonarQube SAST"]
-        SCA["Dependency SCA"]
-        TRIVY["Trivy FS + image scan"]
-    end
-
-    subgraph Supply["Supply chain controls"]
-        SBOM["Syft SBOM generation"]
-        GRYPE["Grype vulnerability scan"]
-        POLICY{"CVSS &gt; 7 or unsigned?"}
-        SIGN["Cosign / Sigstore sign"]
-        HARBOR["Harbor secure registry"]
-    end
-
-    subgraph Deploy["Multi-env deployment"]
-        STG["Staging · DAST smoke"]
-        GATE["Manual release gate"]
-        PROD["Production VPS · zero downtime"]
-        ROLL["Automated rollback"]
-    end
-
-    subgraph Ops["Observability"]
-        PROM["Prometheus metrics"]
-        GRAF["Grafana dashboards"]
-        SLACK["Slack security alerts"]
-    end
-
-    CODE --> PR --> PUSH
-    PUSH --> LINT --> UNIT --> SAST --> SCA --> TRIVY
-    TRIVY --> SBOM --> GRYPE --> POLICY
-    POLICY -->|Fail| BLOCK["Block build"]
-    POLICY -->|Pass| SIGN --> HARBOR
-    HARBOR --> STG --> GATE --> PROD
-    PROD --> ROLL
-    PROD --> PROM --> GRAF
-    POLICY --> SLACK
-
-    class CODE,PR,PUSH dev
-    class SAST,SCA,TRIVY,SBOM,GRYPE,SIGN sec
-    class GATE,POLICY gate
-    class PROD,HARBOR prod
-```
+<!-- mermaid: case-studies/devsecops-pipeline.mmd -->
 
 <br/>
 
 **Security policy enforcement — threat model to release gate**
 
-```mermaid
-flowchart TD
-    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
-    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff
-    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
-
-    A["Artifact produced"] --> B["Generate SBOM · Syft"]
-    B --> C["Scan deps · Grype + SCA"]
-    C --> D["Scan container · Trivy"]
-    D --> E{"Critical CVE CVSS &gt; 7?"}
-    E -->|Yes| F["Fail build · notify Slack"]
-    E -->|No| G{"Image signed · Cosign?"}
-    G -->|No| H["Block deploy · unsigned policy"]
-    G -->|Yes| I["Push to Harbor registry"]
-    I --> J["Staging deploy + DAST"]
-    J --> K{"Smoke and security pass?"}
-    K -->|No| L["Rollback staging"]
-    K -->|Yes| M["Manual prod approval"]
-    M --> N["Blue/green VPS deploy"]
-    N --> O["Post-deploy SLO check"]
-
-    class O,I ok
-    class M,J warn
-    class F,H,L bad
-```
+<!-- mermaid: case-studies/devsecops-security-policy.mmd -->
 
 <br/>
 
 **Signed artifact lifecycle — commit to production**
 
-```mermaid
-sequenceDiagram
-    autonumber
-    participant Dev as Developer
-    participant GHA as GitHub Actions
-    participant SQ as SonarQube
-    participant TV as Trivy / Grype
-    participant SY as Syft + Cosign
-    participant HR as Harbor Registry
-    participant VPS as Production VPS
-    participant OBS as Grafana / Slack
-
-    Dev->>GHA: Push tagged release
-    GHA->>SQ: SAST quality gate
-    SQ-->>GHA: Pass / fail
-    GHA->>TV: SCA + image vulnerability scan
-    TV-->>GHA: CVE report
-    GHA->>SY: Generate SBOM + sign artifact
-    SY->>HR: Store signed image + provenance
-    GHA->>VPS: Deploy to staging
-    VPS-->>GHA: Health check OK
-    GHA->>Dev: Manual production gate
-    Dev->>GHA: Approve release
-    GHA->>VPS: Zero-downtime rollout
-    VPS->>OBS: DORA metrics + security event
-    OBS-->>Dev: Deploy confirmed · MTTR tracked
-```
+<!-- mermaid: case-studies/devsecops-artifact-lifecycle.mmd -->
 
 <br/>
 

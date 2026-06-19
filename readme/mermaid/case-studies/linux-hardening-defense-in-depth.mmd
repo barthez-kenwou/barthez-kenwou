@@ -1,0 +1,66 @@
+%% File    : readme/mermaid/case-studies/linux-hardening-defense-in-depth.mmd
+%% Diagram : Linux Hardening — Defense-in-depth stack
+%% Used in : readme/sections/03-case-study-linux-hardening.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart TB
+    classDef edge fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef net fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef host fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef app fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef obs fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Edge["Layer 1 — Edge protection"]
+        CF["Cloudflare CDN"]
+        WAF["Cloudflare WAF"]
+        DDoS["DDoS mitigation"]
+    end
+
+    subgraph Network["Layer 2 — Network perimeter"]
+        UFW["UFW firewall"]
+        IPT["iptables rules"]
+        CSF["CSF policy engine"]
+    end
+
+    subgraph Intrusion["Layer 3 — Intrusion prevention"]
+        F2B["Fail2Ban"]
+        CRW["CrowdSec"]
+        ALERT["Real-time alerts"]
+    end
+
+    subgraph Host["Layer 4 — Host hardening"]
+        SSH["Hardened SSH · keys only"]
+        SYS["sysctl kernel tuning"]
+        PERM["Strict file permissions"]
+        AUTO["Unattended security updates"]
+    end
+
+    subgraph Runtime["Layer 5 — Application runtime"]
+        DOCK["Docker · secured daemon"]
+        APPS["Production containers"]
+        NGINX["Nginx reverse proxy"]
+    end
+
+    subgraph Monitor["Layer 6 — Monitoring"]
+        LOGS["Centralized logs"]
+        REP["Daily security reports"]
+        NTP["NTP time sync"]
+    end
+
+    CF --> WAF --> DDoS --> UFW
+    UFW --> IPT --> CSF
+    CSF --> F2B
+    CSF --> CRW
+    F2B --> ALERT
+    CRW --> ALERT
+    UFW --> SSH --> SYS --> PERM --> AUTO
+    AUTO --> DOCK --> APPS
+    NGINX --> APPS
+    APPS --> LOGS --> REP
+    SYS --> NTP
+
+    class CF,WAF,DDoS edge
+    class UFW,IPT,CSF net
+    class F2B,CRW,SSH,SYS host
+    class DOCK,APPS,NGINX app
+    class LOGS,REP,ALERT obs

@@ -1,0 +1,28 @@
+%% File    : readme/mermaid/case-studies/devsecops-security-policy.mmd
+%% Diagram : DevSecOps — Security policy enforcement
+%% Used in : readme/sections/03-case-study-devsecops.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+flowchart TD
+    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
+    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff
+    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
+
+    A["Artifact produced"] --> B["Generate SBOM · Syft"]
+    B --> C["Scan deps · Grype + SCA"]
+    C --> D["Scan container · Trivy"]
+    D --> E{"Critical CVE CVSS &gt; 7?"}
+    E -->|Yes| F["Fail build · notify Slack"]
+    E -->|No| G{"Image signed · Cosign?"}
+    G -->|No| H["Block deploy · unsigned policy"]
+    G -->|Yes| I["Push to Harbor registry"]
+    I --> J["Staging deploy + DAST"]
+    J --> K{"Smoke and security pass?"}
+    K -->|No| L["Rollback staging"]
+    K -->|Yes| M["Manual prod approval"]
+    M --> N["Blue/green VPS deploy"]
+    N --> O["Post-deploy SLO check"]
+
+    class O,I ok
+    class M,J warn
+    class F,H,L bad

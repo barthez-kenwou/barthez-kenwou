@@ -1,6 +1,6 @@
 <!--
   GENERATED FILE — DO NOT EDIT DIRECTLY
-  Source     : readme/sections/*.md
+  Source     : readme/sections/*.md + readme/mermaid/*.mmd
   Build      : node scripts/build-readme.mjs
   Auto-sync  : node scripts/update-readme.mjs (updates markers, then rebuilds)
 -->

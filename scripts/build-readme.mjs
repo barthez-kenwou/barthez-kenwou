@@ -20,10 +20,13 @@ import { fileURLToPath } from 'url';
 const ROOT = process.cwd();
 const MANIFEST_PATH = path.join(ROOT, 'readme/manifest.json');
 const README_PATH = path.join(ROOT, 'README.md');
+const MERMAID_DIR = path.join(ROOT, 'readme/mermaid');
+
+const MERMAID_IMPORT_PATTERN = /<!--\s*mermaid:\s*([^\s]+)\s*-->/g;
 
 const GENERATED_HEADER = `<!--
   GENERATED FILE — DO NOT EDIT DIRECTLY
-  Source     : readme/sections/*.md
+  Source     : readme/sections/*.md + readme/mermaid/*.mmd
   Build      : node scripts/build-readme.mjs
   Auto-sync  : node scripts/update-readme.mjs (updates markers, then rebuilds)
 -->
@@ -41,6 +44,36 @@ function stripSectionDocBlock(content) {
   return content.replace(docPattern, '');
 }
 
+/**
+ * Strips leading Mermaid documentation lines (%% comments) from source files.
+ * Keeps metadata in .mmd files without polluting the published README output.
+ */
+function stripMermaidDocBlock(diagram) {
+  return diagram.replace(/^(?:%%[^\n]*\n)+/, '').trimStart();
+}
+
+/**
+ * Resolves <!-- mermaid: path/to/file.mmd --> directives into fenced mermaid blocks.
+ * Paths are relative to readme/mermaid/.
+ */
+export function resolveMermaidImports(content) {
+  return content.replace(MERMAID_IMPORT_PATTERN, (_, relativePath) => {
+    const mermaidPath = path.join(MERMAID_DIR, relativePath);
+
+    if (!fs.existsSync(mermaidPath)) {
+      throw new Error(`Missing mermaid file: readme/mermaid/${relativePath}`);
+    }
+
+    const raw = fs.readFileSync(mermaidPath, 'utf8').trimEnd();
+    const diagram = stripMermaidDocBlock(raw);
+    return `\`\`\`mermaid\n${diagram}\n\`\`\``;
+  });
+}
+
+export function processSectionContent(raw) {
+  return resolveMermaidImports(stripSectionDocBlock(raw));
+}
+
 export function buildReadmeContent() {
   const manifest = JSON.parse(fs.readFileSync(MANIFEST_PATH, 'utf8'));
   const parts = [GENERATED_HEADER];
@@ -53,7 +86,7 @@ export function buildReadmeContent() {
     }
 
     const raw = fs.readFileSync(sectionPath, 'utf8');
-    parts.push(stripSectionDocBlock(raw));
+    parts.push(processSectionContent(raw));
   }
 
   return parts.join('');

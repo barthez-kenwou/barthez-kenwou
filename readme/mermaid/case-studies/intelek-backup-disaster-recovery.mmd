@@ -1,0 +1,27 @@
+%% File    : readme/mermaid/case-studies/intelek-backup-disaster-recovery.mmd
+%% Diagram : INTELEK — Backup and disaster recovery
+%% Used in : readme/sections/03-case-study-intelek-odoo.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant Odoo as Odoo application
+    participant PG as PostgreSQL
+    participant FS as Filestore volume
+    participant Job as Backup cron job
+    participant MIN as MinIO object storage
+    participant OPS as DevOps operator
+
+    Odoo->>PG: Transactional writes
+    Odoo->>FS: Attachments and documents
+    Job->>PG: pg_dump snapshot
+    Job->>FS: Archive filestore
+    Job->>MIN: Upload encrypted backup
+    MIN-->>Job: Storage confirmation
+    Job->>OPS: Success notification
+    alt Restore drill
+        OPS->>MIN: Fetch backup artifact
+        MIN->>PG: Restore database
+        MIN->>FS: Restore files
+        PG-->>Odoo: Service validated
+    end

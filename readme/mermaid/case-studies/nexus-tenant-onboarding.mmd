@@ -1,0 +1,19 @@
+%% File    : readme/mermaid/case-studies/nexus-tenant-onboarding.mmd
+%% Diagram : NEXUS — Tenant onboarding and module activation
+%% Used in : readme/sections/03-case-study-nexus.md
+%% Note    : Edit this file, then run `node scripts/build-readme.mjs`
+
+sequenceDiagram
+    autonumber
+    participant Owner as Restaurant Owner
+    participant SaaS as NEXUS Platform
+    participant Pay as Payment Hub
+    participant Mod as Module Registry
+    participant App as Tenant Workspace
+
+    Owner->>SaaS: Register + pick modules
+    SaaS->>Pay: Mobile Money / Stripe / Bank
+    Pay-->>SaaS: Subscription confirmed
+    SaaS->>Mod: Provision enabled modules
+    Mod->>App: Spin up tenant context
+    App-->>Owner: PWA ready — orders, stock, CRM live
