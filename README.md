@@ -705,6 +705,497 @@ sequenceDiagram
 
 </details>
 
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="case-studies">
+<summary><h3><b>▸ DevSecOps Supply Chain</b> — Secure Software Supply Chain · Industrial CI/CD · Active · <b>CLICK TO EXPAND ▾</b></h3></summary>
+
+<br/>
+
+<img src="https://img.shields.io/badge/DevSecOps_Supply_Chain-Industrial_SLSA-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white"/>
+<a href="https://barthez-kenwou.dev/projects/6"><img src="https://img.shields.io/badge/CASE_STUDY-barthez--kenwou.dev-FF6B35?style=flat-square&amp;logo=hashnode&amp;logoColor=white" alt="View case study"/></a>
+<a href="https://github.com/ZENORA-360/zenora360/tree/main/.github"><img src="https://img.shields.io/badge/PIPELINE-GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" alt="Pipeline source"/></a>
+<img src="https://img.shields.io/badge/STATUS-Active-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-DevOps_Engineer-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| Classic CI/CD ignores modern supply chain attacks (dependency poisoning, image tampering, secret leaks) | Industrial DevSecOps platform — SLSA-aligned pipeline with SBOM, signing, policy gates | ~60–70% reduction in critical production vulnerabilities |
+| No artifact traceability across Node.js &amp; Java microservices on VPS | Syft SBOM + Grype/Trivy scans + Cosign/Sigstore verification via Harbor registry | Compromised dependencies &amp; unsigned images blocked automatically |
+| Security scans slowing delivery without measurable DevOps KPIs | Reusable composite actions, parallel jobs, caching + Prometheus/Grafana DORA metrics | 10–20 builds/day · MTTR &lt; 1h · change failure rate &lt; 10% |
+
+<br/>
+
+**Industrial DevSecOps pipeline — multi-environment supply chain**
+
+```mermaid
+flowchart TB
+    classDef dev fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef sec fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef gate fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef prod fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Dev["Developer workflow"]
+        CODE["Node.js / Java repos"]
+        PR["Pull Request"]
+        PUSH["Merge to main"]
+    end
+
+    subgraph CI["GitHub Actions — build stage"]
+        LINT["Lint · type check"]
+        UNIT["Unit · integration tests"]
+        SAST["SonarQube SAST"]
+        SCA["Dependency SCA"]
+        TRIVY["Trivy FS + image scan"]
+    end
+
+    subgraph Supply["Supply chain controls"]
+        SBOM["Syft SBOM generation"]
+        GRYPE["Grype vulnerability scan"]
+        POLICY{"CVSS &gt; 7 or unsigned?"}
+        SIGN["Cosign / Sigstore sign"]
+        HARBOR["Harbor secure registry"]
+    end
+
+    subgraph Deploy["Multi-env deployment"]
+        STG["Staging · DAST smoke"]
+        GATE["Manual release gate"]
+        PROD["Production VPS · zero downtime"]
+        ROLL["Automated rollback"]
+    end
+
+    subgraph Ops["Observability"]
+        PROM["Prometheus metrics"]
+        GRAF["Grafana dashboards"]
+        SLACK["Slack security alerts"]
+    end
+
+    CODE --> PR --> PUSH
+    PUSH --> LINT --> UNIT --> SAST --> SCA --> TRIVY
+    TRIVY --> SBOM --> GRYPE --> POLICY
+    POLICY -->|Fail| BLOCK["Block build"]
+    POLICY -->|Pass| SIGN --> HARBOR
+    HARBOR --> STG --> GATE --> PROD
+    PROD --> ROLL
+    PROD --> PROM --> GRAF
+    POLICY --> SLACK
+
+    class CODE,PR,PUSH dev
+    class SAST,SCA,TRIVY,SBOM,GRYPE,SIGN sec
+    class GATE,POLICY gate
+    class PROD,HARBOR prod
+```
+
+<br/>
+
+**Security policy enforcement — threat model to release gate**
+
+```mermaid
+flowchart TD
+    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
+    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff
+    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
+
+    A["Artifact produced"] --> B["Generate SBOM · Syft"]
+    B --> C["Scan deps · Grype + SCA"]
+    C --> D["Scan container · Trivy"]
+    D --> E{"Critical CVE CVSS &gt; 7?"}
+    E -->|Yes| F["Fail build · notify Slack"]
+    E -->|No| G{"Image signed · Cosign?"}
+    G -->|No| H["Block deploy · unsigned policy"]
+    G -->|Yes| I["Push to Harbor registry"]
+    I --> J["Staging deploy + DAST"]
+    J --> K{"Smoke &amp; security pass?"}
+    K -->|No| L["Rollback staging"]
+    K -->|Yes| M["Manual prod approval"]
+    M --> N["Blue/green VPS deploy"]
+    N --> O["Post-deploy SLO check"]
+
+    class O,I ok
+    class M,J warn
+    class F,H,L bad
+```
+
+<br/>
+
+**Signed artifact lifecycle — commit to production**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Dev as Developer
+    participant GHA as GitHub Actions
+    participant SQ as SonarQube
+    participant TV as Trivy / Grype
+    participant SY as Syft + Cosign
+    participant HR as Harbor Registry
+    participant VPS as Production VPS
+    participant OBS as Grafana / Slack
+
+    Dev->>GHA: Push tagged release
+    GHA->>SQ: SAST quality gate
+    SQ-->>GHA: Pass / fail
+    GHA->>TV: SCA + image vulnerability scan
+    TV-->>GHA: CVE report
+    GHA->>SY: Generate SBOM + sign artifact
+    SY->>HR: Store signed image + provenance
+    GHA->>VPS: Deploy to staging
+    VPS-->>GHA: Health check OK
+    GHA->>Dev: Manual production gate
+    Dev->>GHA: Approve release
+    GHA->>VPS: Zero-downtime rollout
+    VPS->>OBS: DORA metrics + security event
+    OBS-->>Dev: Deploy confirmed · MTTR tracked
+```
+
+<br/>
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white)
+![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&amp;logo=sonarqube&amp;logoColor=white)
+![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+![Cosign](https://img.shields.io/badge/Cosign-Sigstore-7C3AED?style=flat-square&amp;logo=googlecloud&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&amp;logo=grafana&amp;logoColor=white)
+![Harbor](https://img.shields.io/badge/Harbor-Registry-60B932?style=flat-square&amp;logo=harbor&amp;logoColor=white)
+
+<br/>
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="case-studies">
+<summary><h3><b>▸ Linux Server Hardening</b> — Ubuntu Production Security · Multi-Layer Defense · Active · <b>CLICK TO EXPAND ▾</b></h3></summary>
+
+<br/>
+
+<img src="https://img.shields.io/badge/Linux_Hardening-Ubuntu_Production-EF4444?style=for-the-badge&amp;logo=linux&amp;logoColor=white"/>
+<a href="https://barthez-kenwou.dev/projects/10"><img src="https://img.shields.io/badge/CASE_STUDY-barthez--kenwou.dev-FF6B35?style=flat-square&amp;logo=hashnode&amp;logoColor=white" alt="View case study"/></a>
+<img src="https://img.shields.io/badge/STATUS-Active-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-DevOps_Engineer-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| Internet-exposed VPS vulnerable to brute force, scans &amp; exploits | Defense-in-depth hardening — SSH, kernel, firewall, WAF, IDS layers | Drastically reduced attack surface · 99.9% uptime |
+| No proactive blocking of automated intrusion attempts | Fail2Ban + CrowdSec + UFW/iptables/CSF coordinated stack | 100+ attack attempts blocked daily · auto-ban policies |
+| Container workloads needed on a hardened host without compromising isolation | Docker secured + sysctl kernel tuning + centralized logging &amp; alerting | Production-ready host for multi-app Docker deployments |
+
+<br/>
+
+**Defense-in-depth architecture — multi-layer security stack**
+
+```mermaid
+flowchart TB
+    classDef edge fill:#F59E0B,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef net fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef host fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef app fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef obs fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Edge["Layer 1 — Edge protection"]
+        CF["Cloudflare CDN"]
+        WAF["Cloudflare WAF"]
+        DDoS["DDoS mitigation"]
+    end
+
+    subgraph Network["Layer 2 — Network perimeter"]
+        UFW["UFW firewall"]
+        IPT["iptables rules"]
+        CSF["CSF policy engine"]
+    end
+
+    subgraph Intrusion["Layer 3 — Intrusion prevention"]
+        F2B["Fail2Ban"]
+        CRW["CrowdSec"]
+        ALERT["Real-time alerts"]
+    end
+
+    subgraph Host["Layer 4 — Host hardening"]
+        SSH["Hardened SSH · keys only"]
+        SYS["sysctl kernel tuning"]
+        PERM["Strict file permissions"]
+        AUTO["Unattended security updates"]
+    end
+
+    subgraph Runtime["Layer 5 — Application runtime"]
+        DOCK["Docker · secured daemon"]
+        APPS["Production containers"]
+        NGINX["Nginx reverse proxy"]
+    end
+
+    subgraph Monitor["Layer 6 — Monitoring"]
+        LOGS["Centralized logs"]
+        REP["Daily security reports"]
+        NTP["NTP time sync"]
+    end
+
+    CF --> WAF --> DDoS --> UFW
+    UFW --> IPT --> CSF
+    CSF --> F2B
+    CSF --> CRW
+    F2B --> ALERT
+    CRW --> ALERT
+    UFW --> SSH --> SYS --> PERM --> AUTO
+    AUTO --> DOCK --> APPS
+    NGINX --> APPS
+    APPS --> LOGS --> REP
+    SYS --> NTP
+
+    class CF,WAF,DDoS edge
+    class UFW,IPT,CSF net
+    class F2B,CRW,SSH,SYS host
+    class DOCK,APPS,NGINX app
+    class LOGS,REP,ALERT obs
+```
+
+<br/>
+
+**Attack mitigation pipeline — inbound threat to block**
+
+```mermaid
+flowchart LR
+    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
+    classDef check fill:#F59E0B,stroke:#0F172A,color:#fff
+    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
+
+    A["Inbound request"] --> B{"Cloudflare WAF match?"}
+    B -->|Yes| X1["Block at edge"]
+    B -->|No| C{"UFW / CSF allow?"}
+    C -->|No| X2["Drop packet"]
+    C -->|Yes| D{"SSH brute force?"}
+    D -->|Yes| E["Fail2Ban ban IP"]
+    D -->|No| F{"Scan pattern?"}
+    F -->|Yes| G["CrowdSec decision"]
+    G --> H["Community blocklist"]
+    F -->|No| I["Allow to service"]
+    I --> J["Log + monitor"]
+    E --> J
+    H --> J
+
+    class X1,X2 bad
+    class B,C,D,F,G check
+    class I,J ok
+```
+
+<br/>
+
+**SSH access hardening — authentication flow**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Attacker as External actor
+    participant CF as Cloudflare WAF
+    participant FW as UFW / CSF
+    participant F2B as Fail2Ban
+    participant SSH as Hardened SSH
+    participant SRV as Ubuntu server
+    participant AL as Alert system
+
+    Attacker->>CF: Connection attempt
+    CF->>CF: WAF rule evaluation
+    alt Malicious pattern
+        CF-->>Attacker: Blocked at edge
+        CF->>AL: WAF alert
+    else Allowed
+        CF->>FW: Forward to origin
+        FW->>FW: Port &amp; IP policy check
+        alt Port closed / IP banned
+            FW-->>Attacker: Connection refused
+            FW->>F2B: Log failed attempt
+            F2B->>AL: Ban threshold alert
+        else Permitted
+            FW->>SSH: Handshake
+            SSH->>SSH: Key-based auth only · no root
+            alt Invalid credentials
+                SSH-->>Attacker: Auth denied
+                SSH->>F2B: Increment fail counter
+            else Valid key
+                SSH->>SRV: Grant limited session
+                SRV->>AL: Login audit log
+            end
+        end
+    end
+```
+
+<br/>
+
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&amp;logo=ubuntu&amp;logoColor=white)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&amp;logo=cloudflare&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&amp;logo=nginx&amp;logoColor=white)
+![Fail2Ban](https://img.shields.io/badge/Fail2Ban-EF4444?style=flat-square&amp;logo=security&amp;logoColor=white)
+![CrowdSec](https://img.shields.io/badge/CrowdSec-41AF47?style=flat-square&amp;logo=security&amp;logoColor=white)
+![iptables](https://img.shields.io/badge/iptables-3B82F6?style=flat-square&amp;logo=linux&amp;logoColor=white)
+
+<br/>
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="case-studies">
+<summary><h3><b>▸ INTELEK Odoo ERP</b> — Cloud Infrastructure · Kubernetes · BTP · Production · <b>CLICK TO EXPAND ▾</b></h3></summary>
+
+<br/>
+
+<img src="https://img.shields.io/badge/INTELEK-Odoo_ERP_BTP-7C3AED?style=for-the-badge&amp;logo=odoo&amp;logoColor=white"/>
+<a href="https://barthez-kenwou.dev/projects/7"><img src="https://img.shields.io/badge/CASE_STUDY-barthez--kenwou.dev-FF6B35?style=flat-square&amp;logo=hashnode&amp;logoColor=white" alt="View case study"/></a>
+<a href="https://erp-dev.zenora360.com/"><img src="https://img.shields.io/badge/LIVE-erp--dev.zenora360.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="Live ERP"/></a>
+<img src="https://img.shields.io/badge/STATUS-Production-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-DevOps_Engineer-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| BTP company (~15 staff) managing projects, finance &amp; HR across fragmented tools | Full Odoo ERP — 10+ core &amp; OCA modules customized for construction workflows | Single source of truth for all operations |
+| No scalable, secure infrastructure for business-critical ERP data | Kubernetes-orchestrated stack on hardened VPS · PostgreSQL persistence · Nginx ingress | Production-ready platform with controlled access |
+| Risk of data loss on containerized ERP without reliable backup strategy | Automated external backups to MinIO object storage + restore validation | Business continuity guaranteed · full operational traceability |
+
+<br/>
+
+**Cloud ERP infrastructure — Kubernetes topology**
+
+```mermaid
+flowchart TB
+    classDef edge fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef k8s fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef data fill:#22C55E,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef ops fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Users["INTELEK teams · ~15 users"]
+        FIN["Finance"]
+        PM["Project managers"]
+        HR["HR · procurement"]
+        SALES["Sales"]
+    end
+
+    subgraph Edge["Edge layer"]
+        DNS["DNS · TLS"]
+        NGX["Nginx reverse proxy"]
+    end
+
+    subgraph K8S["Kubernetes cluster · VPS"]
+        ING["Ingress controller"]
+        subgraph OdooStack["Odoo workload"]
+            WEB["Odoo web pods"]
+            WORK["Odoo workers"]
+            CRON["Scheduled jobs"]
+        end
+        subgraph Modules["Business modules"]
+            PROJ["Project management"]
+            ACCT["Accounting"]
+            STOCK["Inventory · purchases"]
+            HRMOD["HR · payroll"]
+        end
+    end
+
+    subgraph Data["Data platform"]
+        PG[("PostgreSQL · persistent volume")]
+        FILE["Filestore volume"]
+        MINIO[("MinIO backups")]
+    end
+
+    subgraph Sec["Security &amp; ops"]
+        HARD["Server hardening"]
+        BK["Backup automation"]
+        MON["Health monitoring"]
+    end
+
+    Users --> DNS --> NGX --> ING
+    ING --> WEB --> WORK
+    WEB --> Modules
+    WORK --> PG
+    WEB --> FILE
+    CRON --> PG
+    PG --> BK --> MINIO
+    HARD --> K8S
+    MON --> K8S
+
+    class FIN,PM,HR,SALES edge
+    class WEB,WORK,CRON,Modules k8s
+    class PG,FILE,MINIO data
+    class HARD,BK,MON ops
+```
+
+<br/>
+
+**Odoo business modules — construction company workflows**
+
+```mermaid
+flowchart LR
+    classDef mod fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef flow fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    A["New BTP project"] --> B["Project module"]
+    B --> C["Budget &amp; planning"]
+    C --> D["Procurement · purchases"]
+    D --> E["Inventory · stock"]
+    E --> F["Invoicing · accounting"]
+    F --> G["HR · timesheets"]
+    G --> H["Reporting · dashboards"]
+    B --> I["Sales · CRM pipeline"]
+    I --> D
+
+    class B,C,D,E,F,G,I mod
+    class A,H flow
+```
+
+<br/>
+
+**Backup &amp; disaster recovery workflow**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Odoo as Odoo application
+    participant PG as PostgreSQL
+    participant FS as Filestore volume
+    participant Job as Backup cron job
+    participant MIN as MinIO object storage
+    participant OPS as DevOps operator
+
+    Odoo->>PG: Transactional writes
+    Odoo->>FS: Attachments &amp; documents
+    Job->>PG: pg_dump snapshot
+    Job->>FS: Archive filestore
+    Job->>MIN: Upload encrypted backup
+    MIN-->>Job: Storage confirmation
+    Job->>OPS: Success notification
+    alt Restore drill
+        OPS->>MIN: Fetch backup artifact
+        MIN->>PG: Restore database
+        MIN->>FS: Restore files
+        PG-->>Odoo: Service validated
+    end
+```
+
+<br/>
+
+![Odoo](https://img.shields.io/badge/Odoo-714B67?style=flat-square&amp;logo=odoo&amp;logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72C48?style=flat-square&amp;logo=minio&amp;logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&amp;logo=nginx&amp;logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white)
+
+<br/>
+
+</details>
+
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Tech%20Arsenal&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
