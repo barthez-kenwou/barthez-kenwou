@@ -256,7 +256,7 @@ Cloud, security & observability
 
 <br/><br/>
 
-<img src="https://github-profile-trophy-kappa.vercel.app/?username=barthez-kenwou&amp;theme=dracula&amp;no-frame=true&amp;no-bg=true&amp;column=4&amp;margin-w=8&amp;margin-h=8" alt="Trophies" width="100%"/>
+<img src="https://github-profile-trophy-kappa.vercel.app/?username=barthez-kenwou&amp;theme=dracula&amp;no-frame=true&amp;no-bg=true&amp;column=6&amp;margin-w=4&amp;margin-h=4" alt="Trophies" width="72%"/>
 
 </div>
 
