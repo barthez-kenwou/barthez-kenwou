@@ -509,6 +509,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 <br/>
+<br/>
 
 <img src="https://github-profile-trophy-kappa.vercel.app/?username=barthez-kenwou&amp;theme=dracula&amp;no-frame=true&amp;no-bg=true&amp;column=6&amp;margin-w=4&amp;margin-h=4" alt="Trophies" width="72%"/>
 
@@ -578,9 +579,9 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=24&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 <br/>
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="74%"/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="85%"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:FF6B35,50:7C3AED,100:0F172A&amp;height=100&amp;section=footer&amp;fontSize=14&amp;fontColor=FFFFFF&amp;text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&amp;animation=scaleIn" width="100%"/>
 
