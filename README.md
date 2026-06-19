@@ -809,7 +809,7 @@ flowchart TD
     G -->|No| H["Block deploy · unsigned policy"]
     G -->|Yes| I["Push to Harbor registry"]
     I --> J["Staging deploy + DAST"]
-    J --> K{"Smoke &amp; security pass?"}
+    J --> K{"Smoke and security pass?"}
     K -->|No| L["Rollback staging"]
     K -->|Yes| M["Manual prod approval"]
     M --> N["Blue/green VPS deploy"]
@@ -995,7 +995,7 @@ sequenceDiagram
     autonumber
     participant Attacker as External actor
     participant CF as Cloudflare WAF
-    participant FW as UFW / CSF
+    participant FW as UFW CSF firewall
     participant F2B as Fail2Ban
     participant SSH as Hardened SSH
     participant SRV as Ubuntu server
@@ -1003,26 +1003,23 @@ sequenceDiagram
 
     Attacker->>CF: Connection attempt
     CF->>CF: WAF rule evaluation
-    alt Malicious pattern
+    alt Malicious pattern detected
         CF-->>Attacker: Blocked at edge
         CF->>AL: WAF alert
-    else Allowed
+    else Traffic allowed
         CF->>FW: Forward to origin
-        FW->>FW: Port &amp; IP policy check
-        alt Port closed / IP banned
+        FW->>FW: Port and IP policy check
+        alt Access denied
             FW-->>Attacker: Connection refused
             FW->>F2B: Log failed attempt
             F2B->>AL: Ban threshold alert
-        else Permitted
-            FW->>SSH: Handshake
-            SSH->>SSH: Key-based auth only · no root
-            alt Invalid credentials
-                SSH-->>Attacker: Auth denied
-                SSH->>F2B: Increment fail counter
-            else Valid key
-                SSH->>SRV: Grant limited session
-                SRV->>AL: Login audit log
-            end
+        else Access permitted
+            FW->>SSH: Handshake request
+            SSH->>SSH: Key auth only no root login
+            SSH-->>Attacker: Deny if invalid credentials
+            SSH->>F2B: Increment fail counter
+            SSH->>SRV: Grant limited session
+            SRV->>AL: Login audit log
         end
     end
 ```
@@ -1108,7 +1105,7 @@ flowchart TB
         MINIO[("MinIO backups")]
     end
 
-    subgraph Sec["Security &amp; ops"]
+    subgraph Sec["Security and ops"]
         HARD["Server hardening"]
         BK["Backup automation"]
         MON["Health monitoring"]
@@ -1140,7 +1137,7 @@ flowchart LR
     classDef flow fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
 
     A["New BTP project"] --> B["Project module"]
-    B --> C["Budget &amp; planning"]
+    B --> C["Budget and planning"]
     C --> D["Procurement · purchases"]
     D --> E["Inventory · stock"]
     E --> F["Invoicing · accounting"]
@@ -1168,7 +1165,7 @@ sequenceDiagram
     participant OPS as DevOps operator
 
     Odoo->>PG: Transactional writes
-    Odoo->>FS: Attachments &amp; documents
+    Odoo->>FS: Attachments and documents
     Job->>PG: pg_dump snapshot
     Job->>FS: Archive filestore
     Job->>MIN: Upload encrypted backup
