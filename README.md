@@ -66,13 +66,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <tr>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=32&amp;section=header&amp;text=BUILD&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=50&amp;section=header&amp;text=BUILD&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
 
-<br/><br/>
+<br/>
 
 <sub><b>Modern web &amp; mobile experiences</b></sub>
 
-<br/><br/>
+<br/>
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
@@ -84,13 +84,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=32&amp;section=header&amp;text=SHIP&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=50&amp;section=header&amp;text=SHIP&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
 
-<br/><br/>
+<br/>
 
 <sub><b>APIs, automation &amp; delivery</b></sub>
 
-<br/><br/>
+<br/>
 
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white)
@@ -102,13 +102,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=32&amp;section=header&amp;text=SCALE&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=50&amp;section=header&amp;text=SCALE&amp;fontSize=24&amp;fontColor=FFFFFF" width="100%"/>
 
-<br/><br/>
+<br/>
 
 <sub><b>Cloud, security &amp; observability</b></sub>
 
-<br/><br/>
+<br/>
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
