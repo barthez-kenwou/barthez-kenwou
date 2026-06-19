@@ -57,16 +57,8 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </tr>
 </table>
 
-<br/>
-
 <div align="center">
-
-<sub><b>// whoami — engineer profile</b></sub>
-
-<br/><br/>
-
-<img src="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/main/assets/engineer-yaml.svg" alt="engineer.yaml VS Code profile" width="92%"/>
-
+<img src="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/main/assets/engineer-yaml.svg" alt="engineer.yaml" width="76%"/>
 </div>
 
 <br/>

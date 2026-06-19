@@ -1,95 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-label="engineer.yaml VS Code editor">
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="248" viewBox="0 0 680 248" role="img" aria-label="engineer.yaml">
   <defs>
-    <linearGradient id="titleBar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#3c3c3c"/>
-      <stop offset="100%" stop-color="#323233"/>
+    <linearGradient id="tb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a3a3a"/>
+      <stop offset="100%" stop-color="#2d2d2d"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
   </defs>
 
-  <rect x="8" y="8" width="704" height="384" rx="10" fill="#252526"/>
-  <rect x="8" y="8" width="704" height="36" rx="10" fill="url(#titleBar)"/>
-  <rect x="8" y="32" width="704" height="12" fill="url(#titleBar)"/>
+  <rect x="4" y="4" width="672" height="240" rx="8" fill="#1e1e1e" stroke="url(#accent)" stroke-width="1.2" opacity="0.95"/>
+  <rect x="4" y="4" width="672" height="26" rx="8" fill="url(#tb)"/>
+  <rect x="4" y="22" width="672" height="8" fill="url(#tb)"/>
 
-  <circle cx="30" cy="26" r="7" fill="#ff5f57"/>
-  <circle cx="52" cy="26" r="7" fill="#febc2e"/>
-  <circle cx="74" cy="26" r="7" fill="#28c840"/>
+  <circle cx="20" cy="17" r="5" fill="#ff5f57"/>
+  <circle cx="36" cy="17" r="5" fill="#febc2e"/>
+  <circle cx="52" cy="17" r="5" fill="#28c840"/>
 
-  <text x="360" y="30" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#cccccc" opacity="0.85">engineer.yaml - Visual Studio Code</text>
+  <rect x="4" y="30" width="672" height="22" fill="#252526"/>
+  <rect x="14" y="33" width="108" height="18" rx="4" fill="#1e1e1e"/>
+  <rect x="14" y="33" width="3" height="18" rx="1" fill="#FF6B35"/>
+  <rect x="14" y="49" width="108" height="2" fill="#007acc"/>
+  <text x="24" y="46" font-family="Consolas, monospace" font-size="10" fill="#e0e0e0">engineer.yaml</text>
 
-  <rect x="8" y="44" width="704" height="34" fill="#252526"/>
-  <rect x="24" y="50" width="148" height="26" rx="6" fill="#1e1e1e"/>
-  <rect x="24" y="74" width="148" height="4" fill="#007acc"/>
-  <text x="38" y="68" font-family="Consolas, monospace" font-size="12" fill="#cccccc">engineer.yaml</text>
-  <rect x="182" y="50" width="108" height="26" rx="6" fill="#2d2d2d" opacity="0.65"/>
-  <text x="196" y="68" font-family="Consolas, monospace" font-size="12" fill="#969696">README.md</text>
+  <rect x="8" y="52" width="36" height="172" fill="#181818"/>
+  <rect x="44" y="52" width="628" height="172" fill="#1e1e1e"/>
+  <line x1="44" y1="52" x2="44" y2="224" stroke="#333" stroke-width="1"/>
 
-  <rect x="8" y="78" width="48" height="314" fill="#1e1e1e"/>
-  <rect x="56" y="78" width="656" height="314" fill="#1e1e1e"/>
-  <line x1="56" y1="78" x2="56" y2="392" stroke="#333333" stroke-width="1"/>
+  <text x="16" y="68" font-family="Consolas, monospace" font-size="10" fill="#6e7681">1</text>
+  <text x="16" y="83" font-family="Consolas, monospace" font-size="10" fill="#6e7681">2</text>
+  <text x="16" y="98" font-family="Consolas, monospace" font-size="10" fill="#6e7681">3</text>
+  <text x="16" y="113" font-family="Consolas, monospace" font-size="10" fill="#6e7681">4</text>
+  <text x="16" y="128" font-family="Consolas, monospace" font-size="10" fill="#6e7681">5</text>
+  <text x="16" y="143" font-family="Consolas, monospace" font-size="10" fill="#6e7681">6</text>
+  <text x="16" y="158" font-family="Consolas, monospace" font-size="10" fill="#6e7681">7</text>
+  <text x="16" y="173" font-family="Consolas, monospace" font-size="10" fill="#6e7681">8</text>
+  <text x="16" y="188" font-family="Consolas, monospace" font-size="10" fill="#6e7681">9</text>
+  <text x="14" y="203" font-family="Consolas, monospace" font-size="10" fill="#6e7681">10</text>
 
-  <text x="22" y="104" font-family="Consolas, monospace" font-size="13" fill="#858585">1</text>
-  <text x="22" y="124" font-family="Consolas, monospace" font-size="13" fill="#858585">2</text>
-  <text x="22" y="144" font-family="Consolas, monospace" font-size="13" fill="#858585">3</text>
-  <text x="22" y="164" font-family="Consolas, monospace" font-size="13" fill="#858585">4</text>
-  <text x="22" y="184" font-family="Consolas, monospace" font-size="13" fill="#858585">5</text>
-  <text x="22" y="204" font-family="Consolas, monospace" font-size="13" fill="#858585">6</text>
-  <text x="22" y="224" font-family="Consolas, monospace" font-size="13" fill="#858585">7</text>
-  <text x="22" y="244" font-family="Consolas, monospace" font-size="13" fill="#858585">8</text>
-  <text x="22" y="264" font-family="Consolas, monospace" font-size="13" fill="#858585">9</text>
-  <text x="22" y="284" font-family="Consolas, monospace" font-size="13" fill="#858585">10</text>
+  <text x="54" y="68" font-family="Consolas, monospace" font-size="11" fill="#6a9955"># engineer.yaml</text>
 
-  <text x="72" y="104" font-family="Consolas, monospace" font-size="14" fill="#6a9955"># engineer.yaml</text>
+  <text x="54" y="83" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">name</text><text x="84" y="83" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="92" y="83" font-family="Consolas, monospace" font-size="11" fill="#ce9178">Barthez Kenwou</text>
+  <text x="54" y="98" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">role</text><text x="78" y="98" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="86" y="98" font-family="Consolas, monospace" font-size="11" fill="#ce9178">DevOps Engineer &amp; Full Stack Developer</text>
+  <text x="54" y="113" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">location</text><text x="106" y="113" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="114" y="113" font-family="Consolas, monospace" font-size="11" fill="#ce9178">Yaounde, Cameroon</text>
+  <text x="54" y="128" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">focus</text><text x="84" y="128" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="92" y="128" font-family="Consolas, monospace" font-size="11" fill="#ffd700">[</text><text x="98" y="128" font-family="Consolas, monospace" font-size="11" fill="#ce9178">AWS, K8s, React, Node.js, DevSecOps</text><text x="418" y="128" font-family="Consolas, monospace" font-size="11" fill="#ffd700">]</text>
+  <text x="54" y="143" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">currently</text><text x="112" y="143" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">:</text>
+  <text x="66" y="158" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">building</text><text x="116" y="158" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="124" y="158" font-family="Consolas, monospace" font-size="11" fill="#ffd700">[</text><text x="130" y="158" font-family="Consolas, monospace" font-size="11" fill="#ce9178">NEXUS, Kaza, DevSecOps</text><text x="352" y="158" font-family="Consolas, monospace" font-size="11" fill="#ffd700">]</text>
+  <text x="66" y="173" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">teaching</text><text x="116" y="173" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="124" y="173" font-family="Consolas, monospace" font-size="11" fill="#ce9178">IT Engineering Factory / WorketYamo</text>
+  <text x="66" y="188" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">working</text><text x="112" y="188" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="120" y="188" font-family="Consolas, monospace" font-size="11" fill="#ffd700">[</text><text x="126" y="188" font-family="Consolas, monospace" font-size="11" fill="#ce9178">INTELEK, ZENORA</text><text x="258" y="188" font-family="Consolas, monospace" font-size="11" fill="#ffd700">]</text>
+  <text x="54" y="203" font-family="Consolas, monospace" font-size="11" fill="#9cdcfe">open_to</text><text x="98" y="203" font-family="Consolas, monospace" font-size="11" fill="#d4d4d4">: </text><text x="106" y="203" font-family="Consolas, monospace" font-size="11" fill="#ffd700">[</text><text x="112" y="203" font-family="Consolas, monospace" font-size="11" fill="#ce9178">freelance, architecture, mentoring, SaaS</text><text x="468" y="203" font-family="Consolas, monospace" font-size="11" fill="#ffd700">]</text>
 
-  <text x="72" y="124" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">name</text>
-  <text x="108" y="124" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="118" y="124" font-family="Consolas, monospace" font-size="14" fill="#ce9178">Barthez Kenwou</text>
-
-  <text x="72" y="144" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">role</text>
-  <text x="100" y="144" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="110" y="144" font-family="Consolas, monospace" font-size="14" fill="#ce9178">DevOps Engineer &amp; Full Stack Developer</text>
-
-  <text x="72" y="164" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">location</text>
-  <text x="132" y="164" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="142" y="164" font-family="Consolas, monospace" font-size="14" fill="#ce9178">Yaounde, Cameroon</text>
-
-  <text x="72" y="184" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">focus</text>
-  <text x="108" y="184" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="118" y="184" font-family="Consolas, monospace" font-size="14" fill="#ffd700">[</text>
-  <text x="126" y="184" font-family="Consolas, monospace" font-size="14" fill="#ce9178">AWS, Kubernetes, React, Node.js, DevSecOps</text>
-  <text x="498" y="184" font-family="Consolas, monospace" font-size="14" fill="#ffd700">]</text>
-
-  <text x="72" y="204" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">currently</text>
-  <text x="144" y="204" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">:</text>
-
-  <text x="88" y="224" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">building</text>
-  <text x="148" y="224" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="158" y="224" font-family="Consolas, monospace" font-size="14" fill="#ffd700">[</text>
-  <text x="166" y="224" font-family="Consolas, monospace" font-size="14" fill="#ce9178">NEXUS, Kaza, DevSecOps pipelines</text>
-  <text x="430" y="224" font-family="Consolas, monospace" font-size="14" fill="#ffd700">]</text>
-
-  <text x="88" y="244" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">teaching</text>
-  <text x="148" y="244" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="158" y="244" font-family="Consolas, monospace" font-size="14" fill="#ce9178">IT Engineering Factory / WorketYamo</text>
-
-  <text x="88" y="264" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">working</text>
-  <text x="144" y="264" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="154" y="264" font-family="Consolas, monospace" font-size="14" fill="#ffd700">[</text>
-  <text x="162" y="264" font-family="Consolas, monospace" font-size="14" fill="#ce9178">INTELEK, ZENORA</text>
-  <text x="310" y="264" font-family="Consolas, monospace" font-size="14" fill="#ffd700">]</text>
-
-  <text x="72" y="284" font-family="Consolas, monospace" font-size="14" fill="#9cdcfe">open_to</text>
-  <text x="124" y="284" font-family="Consolas, monospace" font-size="14" fill="#d4d4d4">: </text>
-  <text x="134" y="284" font-family="Consolas, monospace" font-size="14" fill="#ffd700">[</text>
-  <text x="142" y="284" font-family="Consolas, monospace" font-size="14" fill="#ce9178">freelance, cloud architecture, mentoring, SaaS</text>
-  <text x="562" y="284" font-family="Consolas, monospace" font-size="14" fill="#ffd700">]</text>
-
-  <rect x="572" y="272" width="2" height="18" fill="#aeafad">
+  <rect x="478" y="191" width="2" height="14" fill="#aeafad">
     <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
   </rect>
 
-  <rect x="8" y="392" width="704" height="22" fill="#007acc"/>
-  <text x="20" y="407" font-family="Consolas, monospace" font-size="11" fill="#ffffff">main</text>
-  <text x="72" y="407" font-family="Consolas, monospace" font-size="11" fill="#ffffff" opacity="0.9">UTF-8</text>
-  <text x="130" y="407" font-family="Consolas, monospace" font-size="11" fill="#ffffff" opacity="0.9">YAML</text>
-  <text x="600" y="407" font-family="Consolas, monospace" font-size="11" fill="#ffffff" opacity="0.9">Ln 10, Col 1</text>
+  <rect x="4" y="226" width="672" height="18" fill="#007acc"/>
+  <text x="14" y="238" font-family="Consolas, monospace" font-size="9" fill="#fff">main</text>
+  <text x="52" y="238" font-family="Consolas, monospace" font-size="9" fill="#fff" opacity="0.9">YAML</text>
+  <text x="590" y="238" font-family="Consolas, monospace" font-size="9" fill="#fff" opacity="0.85">Ln 10</text>
 </svg>
