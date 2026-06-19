@@ -208,16 +208,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <table width="88%">
 <tr>
-<td align="center" colspan="2">
 
+<td align="center">
 <img src="https://img.shields.io/badge/CREDENTIAL-FF6B35?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white"/>
-
 </td>
 
-<td align="center" colspan="2">
-
+<td align="center">
 <img src="https://img.shields.io/badge/ISSUER-7C3AED?style=for-the-badge&amp;logo=vercel&amp;logoColor=white"/>
-
 </td>
 
 </tr>
