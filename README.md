@@ -291,11 +291,11 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 [![Blog](https://img.shields.io/badge/Read_My_Blog-7C3AED?style=for-the-badge&logo=hashnode&logoColor=white)](https://barthez-kenwou.dev/blog)
 [![GitHub Repos](https://img.shields.io/badge/Browse_Repos-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/barthez-kenwou?tab=repositories)
 
-<br/><br/>
+<br/>
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The+best+way+to+predict+the+future+is+to+build+it.&author=Barthez+Kenwou" alt="Quote"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:FF6B35,50:7C3AED,100:0F172A&amp;height=100&amp;section=footer&amp;fontSize=14&amp;fontColor=FFFFFF&amp;text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&amp;animation=scaleIn" width="100%"/>
 
