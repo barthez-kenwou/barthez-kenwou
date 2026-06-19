@@ -1,10 +1,22 @@
 import fs from 'fs';
+import path from 'path';
+import { buildReadme } from './build-readme.mjs';
 
-const README_PATH = 'README.md';
-const PROJECTS_PATH = 'data/projects.json';
+const ROOT = process.cwd();
+const PROJECTS_PATH = path.join(ROOT, 'data/projects.json');
+const SIGNATURE_PROJECTS_SECTION = path.join(ROOT, 'readme/sections/02-signature-projects.md');
+const BLOG_SECTION = path.join(ROOT, 'readme/sections/09-blog.md');
 const PORTFOLIO_BLOG_PATH =
   process.env.PORTFOLIO_BLOG_PATH ||
-  'portfolio/src/entities/blogs/api/mock/blog.mocks.ts';
+  path.join(ROOT, 'portfolio/src/entities/blogs/api/mock/blog.mocks.ts');
+
+function readSection(filePath) {
+  return fs.readFileSync(filePath, 'utf8');
+}
+
+function writeSection(filePath, content) {
+  fs.writeFileSync(filePath, content);
+}
 
 function replaceSection(content, name, body) {
   const start = `<!-- README-AUTO-START:${name} -->`;
@@ -132,12 +144,15 @@ function postsFromConfig(featuredBlogSlugs) {
 const config = JSON.parse(fs.readFileSync(PROJECTS_PATH, 'utf8'));
 const blogBaseUrl = config.blogBaseUrl || 'https://barthez-kenwou.dev/blog';
 
-let readme = fs.readFileSync(README_PATH, 'utf8');
+let signatureSection = readSection(SIGNATURE_PROJECTS_SECTION);
 
 for (const project of config.projects) {
-  readme = replaceSection(readme, `status-${project.id}`, statusBadge(project));
+  signatureSection = replaceSection(signatureSection, `status-${project.id}`, statusBadge(project));
 }
 
+writeSection(SIGNATURE_PROJECTS_SECTION, signatureSection);
+
+let blogSection = readSection(BLOG_SECTION);
 let latestPosts = [];
 
 if (Array.isArray(config.featuredBlogSlugs) && config.featuredBlogSlugs.length > 0) {
@@ -174,7 +189,9 @@ const blogHtml =
         .join('\n&nbsp;\n')
     : `<a href="https://barthez-kenwou.dev/blog"><img src="https://img.shields.io/badge/Visit_the_Blog-FF6B35?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Visit the blog"/></a>`;
 
-readme = replaceSection(readme, 'blog-latest', blogHtml);
+blogSection = replaceSection(blogSection, 'blog-latest', blogHtml);
 
-fs.writeFileSync(README_PATH, readme);
-console.log('README dynamic sections updated successfully');
+writeSection(BLOG_SECTION, blogSection);
+
+buildReadme();
+console.log('README dynamic sections updated and README.md rebuilt successfully');

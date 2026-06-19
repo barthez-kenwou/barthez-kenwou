@@ -10,6 +10,9 @@ on:
     paths:
       - "data/projects.json"
       - "scripts/update-readme.mjs"
+      - "scripts/build-readme.mjs"
+      - "readme/sections/**"
+      - "readme/manifest.json"
       - ".github/workflows/readme-auto-update.yml"
 
 permissions:
@@ -38,4 +41,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: auto-update README dynamic sections"
-          file_pattern: README.md
+          file_pattern: |
+            README.md
+            readme/sections/02-signature-projects.md
+            readme/sections/09-blog.md

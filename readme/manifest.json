@@ -1,0 +1,119 @@
+{
+  "version": 1,
+  "sections": [
+    {
+      "file": "readme/sections/00-hero.md",
+      "id": "00-hero",
+      "title": "Hero & Profile Bento",
+      "purpose": "Top banner, social CTAs, profile photo, bio, stats, engineer.yaml SVG."
+    },
+    {
+      "file": "readme/sections/01-what-i-craft.md",
+      "id": "01-what-i-craft",
+      "title": "What I Craft",
+      "purpose": "BUILD / SHIP / SCALE pillar cards with tech badges."
+    },
+    {
+      "file": "readme/sections/02-signature-projects.md",
+      "id": "02-signature-projects",
+      "title": "Signature Projects",
+      "purpose": "4-column project table with previews. Contains README-AUTO status markers."
+    },
+    {
+      "file": "readme/sections/03-case-studies-header.md",
+      "id": "03-case-studies-header",
+      "title": "Case Studies \u2014 Header",
+      "purpose": "Section capsule only."
+    },
+    {
+      "file": "readme/sections/03-case-study-nexus.md",
+      "id": "03-case-study-nexus",
+      "title": "Case Study \u2014 NEXUS",
+      "purpose": "Accordion: modular SaaS ERP (in development)."
+    },
+    {
+      "file": "readme/sections/03-case-study-kaza.md",
+      "id": "03-case-study-kaza",
+      "title": "Case Study \u2014 Kaza",
+      "purpose": "Accordion: PropTech + AI fraud detection."
+    },
+    {
+      "file": "readme/sections/03-case-study-gta-it.md",
+      "id": "03-case-study-gta-it",
+      "title": "Case Study \u2014 GTA IT",
+      "purpose": "Accordion: corporate PWA in production."
+    },
+    {
+      "file": "readme/sections/03-case-study-devsecops.md",
+      "id": "03-case-study-devsecops",
+      "title": "Case Study \u2014 DevSecOps Supply Chain",
+      "purpose": "Accordion: industrial DevSecOps pipeline."
+    },
+    {
+      "file": "readme/sections/03-case-study-linux-hardening.md",
+      "id": "03-case-study-linux-hardening",
+      "title": "Case Study \u2014 Linux Hardening",
+      "purpose": "Accordion: Ubuntu server hardening."
+    },
+    {
+      "file": "readme/sections/03-case-study-intelek-odoo.md",
+      "id": "03-case-study-intelek-odoo",
+      "title": "Case Study \u2014 INTELEK Odoo ERP",
+      "purpose": "Accordion: Odoo ERP on Kubernetes."
+    },
+    {
+      "file": "readme/sections/04-tech-arsenal.md",
+      "id": "04-tech-arsenal",
+      "title": "Tech Arsenal",
+      "purpose": "Collapsible skill groups (frontend, backend, cloud, practices)."
+    },
+    {
+      "file": "readme/sections/05-certifications.md",
+      "id": "05-certifications",
+      "title": "Certifications & Credentials",
+      "purpose": "Certification table with issuer links."
+    },
+    {
+      "file": "readme/sections/06-reference-architecture.md",
+      "id": "06-reference-architecture",
+      "title": "Reference Architecture",
+      "purpose": "Pillars table + Mermaid architecture diagrams."
+    },
+    {
+      "file": "readme/sections/07-pipeline.md",
+      "id": "07-pipeline",
+      "title": "The Pipeline I Live By",
+      "purpose": "Engineering loop workflow table."
+    },
+    {
+      "file": "readme/sections/08-github-pulse.md",
+      "id": "08-github-pulse",
+      "title": "GitHub Pulse",
+      "purpose": "Activity graph, snake, stats, trophies."
+    },
+    {
+      "file": "readme/sections/09-blog.md",
+      "id": "09-blog",
+      "title": "Latest from the Blog",
+      "purpose": "Featured article badges. Contains README-AUTO blog-latest markers."
+    },
+    {
+      "file": "readme/sections/10-soft-skills.md",
+      "id": "10-soft-skills",
+      "title": "Soft Skills",
+      "purpose": "Four-column soft skills table."
+    },
+    {
+      "file": "readme/sections/11-services-offers.md",
+      "id": "11-services-offers",
+      "title": "Services & Offers",
+      "purpose": "Pricing table + WhatsApp / portfolio CTAs."
+    },
+    {
+      "file": "readme/sections/12-cta-footer.md",
+      "id": "12-cta-footer",
+      "title": "CTA & Footer",
+      "purpose": "Final call-to-action, daily quote widget, waving footer."
+    }
+  ]
+}

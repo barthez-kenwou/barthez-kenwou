@@ -1,3 +1,10 @@
+<!--
+  GENERATED FILE — DO NOT EDIT DIRECTLY
+  Source     : readme/sections/*.md
+  Build      : node scripts/build-readme.mjs
+  Auto-sync  : node scripts/update-readme.mjs (updates markers, then rebuilds)
+-->
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0F172A,35:1E1B4B,70:7C3AED,100:FF6B35&amp;height=220&amp;section=header&amp;text=Barthez%20Kenwou&amp;fontSize=46&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Full%20Stack%20%C2%B7%20DevOps%20%C2%B7%20Cloud%20Architect&amp;descSize=16&amp;descAlignY=62&amp;descAlign=50"/>
