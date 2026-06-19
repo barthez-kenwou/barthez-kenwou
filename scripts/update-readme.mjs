@@ -22,10 +22,15 @@ function replaceSection(content, name, body) {
   return content.replace(pattern, `${start}\n${body}\n${end}`);
 }
 
+function shieldsBadgeText(text) {
+  return text.replace(/-/g, '--');
+}
+
 function statusBadge(project) {
   if (project.status === 'live' && project.url) {
     const domain = project.url.replace(/^https?:\/\//, '').replace(/\/$/, '');
-    return `<a href="${project.url}"><img src="https://img.shields.io/badge/LIVE-${encodeURIComponent(domain)}-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live ${domain}"/></a>`;
+    const badgeText = `LIVE-${shieldsBadgeText(domain)}`;
+    return `<a href="${project.url}"><img src="https://img.shields.io/badge/${badgeText}-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live ${domain}"/></a>`;
   }
 
   if (project.status === 'in_progress') {

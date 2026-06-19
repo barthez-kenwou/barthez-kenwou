@@ -164,17 +164,17 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white" alt="Node.js"/>
 <br/>
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white" alt="Prisma"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white" alt="AWS"/>
 
 </td>
 <td align="center" valign="middle">
 
 <!-- README-AUTO-START:status-gta-it -->
-<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta-it.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live gta-it.com"/></a>
+<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live gta-it.com"/></a>
 <!-- README-AUTO-END:status-gta-it -->
 
 </td>
@@ -198,20 +198,20 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-<img src="https://img.shields.io/badge/Perf-86-F59E0B?style=flat-square"/>
-<img src="https://img.shields.io/badge/SEO-100-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/Perf-86-F59E0B?style=flat-square" alt="Performance 86"/>
+<img src="https://img.shields.io/badge/SEO-100-22C55E?style=flat-square" alt="SEO 100"/>
 <br/>
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white" alt="Node.js"/>
 <br/>
-![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white" alt="Prisma"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white" alt="AWS"/>
 
 </td>
 <td align="center" valign="middle">
 
 <!-- README-AUTO-START:status-ketc-services -->
-<a href="https://ketc-services.com"><img src="https://img.shields.io/badge/LIVE-ketc-services.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live ketc-services.com"/></a>
+<a href="https://ketc-services.com"><img src="https://img.shields.io/badge/LIVE-ketc--services.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live ketc-services.com"/></a>
 <!-- README-AUTO-END:status-ketc-services -->
 
 </td>
@@ -235,11 +235,11 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
-![Turborepo](https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&amp;logo=turborepo&amp;logoColor=white)
+<img src="https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&amp;logo=turborepo&amp;logoColor=white" alt="Turborepo"/>
 <br/>
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white" alt="AWS"/>
 
 </td>
 <td align="center" valign="middle">
@@ -269,11 +269,11 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
+<img src="https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black" alt="React Native"/>
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white" alt="Kubernetes"/>
 <br/>
-![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white" alt="GraphQL"/>
+<img src="https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white" alt="AWS"/>
 
 </td>
 <td align="center" valign="middle">
@@ -303,10 +303,10 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat-square&amp;logo=wordpress&amp;logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+<img src="https://img.shields.io/badge/WordPress-21759B?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="WordPress"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" alt="Docker"/>
 <br/>
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&amp;logo=cloudflare&amp;logoColor=white)
+<img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&amp;logo=cloudflare&amp;logoColor=white" alt="Cloudflare"/>
 
 </td>
 <td align="center" valign="middle">
@@ -336,17 +336,17 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
-![Express](https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white)
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white" alt="Express"/>
 <br/>
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white)
-![OVH](https://img.shields.io/badge/OVH_VPS-123F6D?style=flat-square&amp;logo=ovh&amp;logoColor=white)
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" alt="Redis"/>
+<img src="https://img.shields.io/badge/OVH_VPS-123F6D?style=flat-square&amp;logo=ovh&amp;logoColor=white" alt="OVH VPS"/>
 
 </td>
 <td align="center" valign="middle">
 
 <!-- README-AUTO-START:status-portfolio -->
-<a href="https://barthez-kenwou.dev"><img src="https://img.shields.io/badge/LIVE-barthez-kenwou.dev-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live barthez-kenwou.dev"/></a>
+<a href="https://barthez-kenwou.dev"><img src="https://img.shields.io/badge/LIVE-barthez--kenwou.dev-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live barthez-kenwou.dev"/></a>
 <!-- README-AUTO-END:status-portfolio -->
 
 </td>
@@ -615,7 +615,7 @@ flowchart TD
 <br/>
 
 <img src="https://img.shields.io/badge/GTA_IT-Corporate_PWA_·_CMS_·_Backoffice-3B82F6?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
-<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta-it.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="gta-it.com"/></a>
+<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="gta-it.com"/></a>
 <img src="https://img.shields.io/badge/STATUS-Production-22C55E?style=flat-square"/>
 <img src="https://img.shields.io/badge/ROLE-Full_Stack_Developer-0F172A?style=flat-square"/>
 
@@ -1154,11 +1154,7 @@ sequenceDiagram
 <br/><br/>
 
 <!-- README-AUTO-START:blog-latest -->
-<a href="https://barthez-kenwou.dev/blog/ci-cd-github-actions-zero-to-expert"><img src="https://img.shields.io/badge/CI_CD_WITH_GITHUB_ACTIONS-FF6B35?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="CI/CD with GitHub Actions – From Zero to Expert"/></a>
-&nbsp;
-<a href="https://barthez-kenwou.dev/blog/microservices-docker-kubernetes-mastery"><img src="https://img.shields.io/badge/MICROSERVICES_DOCKER_K8S-7C3AED?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white" alt="Microservices Architecture with Docker and Kubernetes – From Zero to Mastery"/></a>
-&nbsp;
-<a href="https://barthez-kenwou.dev/blog/devsecops-in-practice-sast-dast"><img src="https://img.shields.io/badge/DEVSECOPS_IN_PRACTICE-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white" alt="DevSecOps in Practice – SAST, DAST, SCA, IaC Scanning & CI/CD Integration (Real Setup)"/></a>
+<a href="https://barthez-kenwou.dev/blog"><img src="https://img.shields.io/badge/Visit_the_Blog-FF6B35?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Visit the blog"/></a>
 <!-- README-AUTO-END:blog-latest -->
 
 <br/><br/>
