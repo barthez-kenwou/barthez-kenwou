@@ -151,7 +151,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/GTA_IT-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=FF6B35"/>
 
-<br/><sub><b>Corporate PWA · CMS · Backoffice</b></sub>
+<sub><b>Corporate PWA · CMS · Backoffice</b></sub>
 
 </td>
 <td align="center" valign="middle">
