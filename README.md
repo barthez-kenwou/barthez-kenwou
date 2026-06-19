@@ -370,22 +370,14 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Deep%20Dive%20Case%20Studies&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
 
-<br/>
-
-<sub><b>Click the project title to expand · one open at a time · badges &amp; links inside each panel</b></sub>
-
-<br/><br/>
-
 <details name="case-studies">
-<summary><h3><b>▸ NEXUS</b> — Modular SaaS ERP · In Development · <b>CLICK TO EXPAND ▾</b></h3></summary>
-
-<br/>
+<summary><b>▸ NEXUS</b> — Modular SaaS ERP · In Development · <b>CLICK TO EXPAND ▾</b></summary>
 
 <img src="https://img.shields.io/badge/NEXUS-Modular_SaaS_ERP-FF6B35?style=for-the-badge&amp;logo=turborepo&amp;logoColor=white"/>
 <img src="https://img.shields.io/badge/STATUS-In_Development-F59E0B?style=flat-square"/>
 <img src="https://img.shields.io/badge/ROLE-Architect_·_Full_Stack_·_DevOps-0F172A?style=flat-square"/>
 
-<br/><br/>
+<br/>
 
 | **Challenge** | **Approach** | **Outcome** |
 |:---:|:---|:---|
@@ -480,24 +472,16 @@ sequenceDiagram
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
 
-<br/>
-
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=6&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
-
-<br/>
-
 <details name="case-studies">
-<summary><h3><b>▸ Kaza</b> — PropTech + AI Fraud Detection · In Development · <b>CLICK TO EXPAND ▾</b></h3></summary>
-
-<br/>
+<summary><b>▸ Kaza</b> — PropTech + AI Fraud Detection · In Development · <b>CLICK TO EXPAND ▾</b></summary>
 
 <img src="https://img.shields.io/badge/Kaza-PropTech_+_AI_Fraud-7C3AED?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=white"/>
 <img src="https://img.shields.io/badge/STATUS-In_Development-F59E0B?style=flat-square"/>
 <img src="https://img.shields.io/badge/ROLE-Full_Stack_·_DevOps-0F172A?style=flat-square"/>
 
-<br/><br/>
+<br/>
 
 | **Challenge** | **Approach** | **Outcome** |
 |:---:|:---|:---|
@@ -601,25 +585,17 @@ flowchart TD
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white)
 
-<br/>
-
 </details>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=6&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
-
-<br/>
-
 <details name="case-studies">
-<summary><h3><b>▸ GTA IT</b> — Corporate PWA · CMS · Backoffice · Production · <b>CLICK TO EXPAND ▾</b></h3></summary>
-
-<br/>
+<summary><b>▸ GTA IT</b> — Corporate PWA · CMS · Backoffice · Production · <b>CLICK TO EXPAND ▾</b></summary>
 
 <img src="https://img.shields.io/badge/GTA_IT-Corporate_PWA_·_CMS_·_Backoffice-3B82F6?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
 <a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="gta-it.com"/></a>
 <img src="https://img.shields.io/badge/STATUS-Production-22C55E?style=flat-square"/>
 <img src="https://img.shields.io/badge/ROLE-Full_Stack_Developer-0F172A?style=flat-square"/>
 
-<br/><br/>
+<br/>
 
 | **Challenge** | **Approach** | **Outcome** |
 |:---:|:---|:---|
@@ -704,8 +680,6 @@ sequenceDiagram
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&amp;logo=nginx&amp;logoColor=white)
-
-<br/>
 
 </details>
 
