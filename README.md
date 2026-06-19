@@ -862,9 +862,10 @@ sequenceDiagram
 
 <br/>
 
-<sub><b>Production-grade blueprint · the stack I design, ship, and operate end-to-end</b></sub>
+<details name="ref-arch">
+<summary><h3><b>▸ Engineering Pillars</b> — Security · Performance · Reliability · Observability · <b>CLICK TO EXPAND ▾</b></h3></summary>
 
-<br/><br/>
+<br/>
 
 | Pillar | What it guarantees |
 |:---:|:---|
@@ -872,6 +873,17 @@ sequenceDiagram
 | **Performance** | CDN edge cache · Redis + NodeCache · compression · clustering · Lighthouse 95+ |
 | **Reliability** | Health checks · zero-downtime deploys · SLO/SLI · automated rollback |
 | **Observability** | Prometheus metrics · Loki logs · Grafana dashboards · Alertmanager |
+
+<br/>
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="ref-arch">
+<summary><h3><b>▸ Full-Stack Architecture</b> — Layered system design · 6 tiers · <b>CLICK TO EXPAND ▾</b></h3></summary>
 
 <br/>
 
@@ -994,6 +1006,17 @@ flowchart TB
 
 <br/>
 
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="ref-arch">
+<summary><h3><b>▸ CI/CD Pipeline</b> — Commit to production · automated delivery · <b>CLICK TO EXPAND ▾</b></h3></summary>
+
+<br/>
+
 **CI/CD delivery pipeline — commit to production**
 
 ```mermaid
@@ -1017,6 +1040,17 @@ flowchart LR
     class SEC gate
     class STG,SMOKE,PROD,SLO,OBS warn
 ```
+
+<br/>
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<details name="ref-arch">
+<summary><h3><b>▸ Request Lifecycle</b> — User hit to data response · end-to-end trace · <b>CLICK TO EXPAND ▾</b></h3></summary>
 
 <br/>
 
@@ -1069,6 +1103,10 @@ sequenceDiagram
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&amp;logo=grafana&amp;logoColor=white)
+
+<br/>
+
+</details>
 
 <br/>
 
