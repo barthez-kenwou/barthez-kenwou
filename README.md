@@ -312,6 +312,328 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Deep%20Dive%20Case%20Studies&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
+
+<br/>
+
+<sub><b>Architecture breakdowns · engineering decisions · measurable outcomes</b></sub>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/NEXUS-Modular_SaaS_ERP-FF6B35?style=for-the-badge&amp;logo=turborepo&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/STATUS-In_Development-F59E0B?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-Architect_·_Full_Stack_·_DevOps-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| Fragmented, expensive tools poorly adapted to local markets | Modular monolith (Turborepo) — pay-per-module SaaS with strict domain boundaries | Restaurants build a custom ERP without vendor lock-in |
+| Multi-tenant isolation at scale | Tenant context layer + per-tenant module registry | Secure data isolation across 10+ business modules |
+| Local payment realities | Unified payment hub (Mobile Money · Stripe · banking) | Subscription billing aligned with Cameroon & international markets |
+
+<br/>
+
+**System architecture — modular monolith on AWS**
+
+```mermaid
+flowchart TB
+    classDef accent fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef core fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef data fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Clients["Client surfaces"]
+        LP["SaaS Landing · SEO"]
+        PWA["Restaurant PWA"]
+        KDS["Kitchen Display"]
+        STF["Staff · Admin portals"]
+    end
+
+    subgraph Nexus["NEXUS Core — Modular Monolith"]
+        GW["API Gateway"]
+        TC["Tenant Context"]
+        subgraph Domains["Domain modules"]
+            ORD["Orders"]
+            INV["Inventory"]
+            CRM["CRM"]
+            POS["POS"]
+            ACC["Accounting"]
+        end
+        BILL["Billing Engine"]
+    end
+
+    subgraph Platform["Data + Platform"]
+        PG[("PostgreSQL")]
+        RD[("Redis")]
+        PAY["Payment Hub"]
+    end
+
+    subgraph Ops["AWS · DevOps"]
+        CICD["GitHub Actions"]
+        OBS["Monitoring · Observability"]
+    end
+
+    LP --> GW
+    PWA --> GW
+    KDS --> GW
+    STF --> GW
+    GW --> TC
+    TC --> Domains
+    Domains --> PG
+    Domains --> RD
+    BILL --> PAY
+    CICD --> Nexus
+    OBS --> Nexus
+
+    class LP,PWA accent
+    class GW,TC,BILL core
+    class PG,RD,PAY data
+```
+
+<br/>
+
+**Tenant onboarding &amp; module activation**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Owner as Restaurant Owner
+    participant SaaS as NEXUS Platform
+    participant Pay as Payment Hub
+    participant Mod as Module Registry
+    participant App as Tenant Workspace
+
+    Owner->>SaaS: Register + pick modules
+    SaaS->>Pay: Mobile Money / Stripe / Bank
+    Pay-->>SaaS: Subscription confirmed
+    SaaS->>Mod: Provision enabled modules
+    Mod->>App: Spin up tenant context
+    App-->>Owner: PWA ready — orders, stock, CRM live
+```
+
+<br/>
+
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
+![Turborepo](https://img.shields.io/badge/Turborepo-EF4444?style=flat-square&amp;logo=turborepo&amp;logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+
+<br/><br/>
+
+---
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Kaza-PropTech_+_AI_Fraud-7C3AED?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/STATUS-In_Development-F59E0B?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-Full_Stack_·_DevOps-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| Rampant listing fraud &amp; zero trust in local PropTech | AI fraud pipeline — image analysis, price anomaly, behavior scoring | ~70% moderation cost reduction target |
+| Inefficient tenant–landlord matching | Credit-based listing quality + advanced multi-filter search | Higher signal-to-noise on every published ad |
+| Low conversion on traditional portals | Native WhatsApp handoff for direct contact | Frictionless conversion on mobile-first market |
+
+<br/>
+
+**Ecosystem architecture — web, mobile &amp; AI services**
+
+```mermaid
+flowchart LR
+    classDef accent fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef ai fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef data fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph Apps["User-facing apps"]
+        RN["React Native"]
+        WEB["Next.js Web"]
+        ADM["Admin Panel"]
+    end
+
+    subgraph Gateway["API layer"]
+        GQL["GraphQL Gateway"]
+        API["REST Services"]
+    end
+
+    subgraph Intel["Fraud Intelligence"]
+        IMG["Image Authenticity"]
+        PRC["Price Benchmark"]
+        BEH["Behavior Signals"]
+        SCR["Trust Score Engine"]
+    end
+
+    subgraph Store["Data platform"]
+        PG[("PostgreSQL")]
+        RD[("Redis")]
+        SRCH["Search Index"]
+    end
+
+    subgraph Infra["Cloud · DevOps"]
+        K8S["Kubernetes · AWS"]
+        MON["Prometheus · Loki · Grafana"]
+    end
+
+    RN --> GQL
+    WEB --> GQL
+    ADM --> API
+    GQL --> API
+    API --> Intel
+    IMG --> SCR
+    PRC --> SCR
+    BEH --> SCR
+    API --> Store
+    API --> K8S
+    MON --> K8S
+
+    class RN,WEB accent
+    class IMG,PRC,BEH,SCR ai
+    class PG,RD,SRCH data
+```
+
+<br/>
+
+**AI fraud detection pipeline**
+
+```mermaid
+flowchart TD
+    classDef ok fill:#22C55E,stroke:#0F172A,color:#fff
+    classDef warn fill:#F59E0B,stroke:#0F172A,color:#fff
+    classDef bad fill:#EF4444,stroke:#0F172A,color:#fff
+
+    A["New listing submitted"] --> B{Sufficient credits?}
+    B -->|No| R1["Reject · request top-up"]
+    B -->|Yes| C["AI moderation pipeline"]
+
+    C --> D["Image authenticity check"]
+    C --> E["Price vs. market benchmark"]
+    C --> F["User behavior analysis"]
+
+    D --> G{Aggregate risk score}
+    E --> G
+    F --> G
+
+    G -->|Low risk| H["Publish listing"]
+    H --> I["WhatsApp direct CTA"]
+    G -->|Medium| J["Flag for manual review"]
+    G -->|High| K["Block · alert ops team"]
+
+    class H,I ok
+    class J warn
+    class K,R1 bad
+```
+
+<br/>
+
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white)
+
+<br/><br/>
+
+---
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/GTA_IT-Corporate_PWA_·_CMS_·_Backoffice-3B82F6?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
+[![Live](https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=flat-square&amp;logo=vercel&amp;logoColor=white)](https://gta-it.com)
+<img src="https://img.shields.io/badge/STATUS-Production-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/ROLE-Full_Stack_Developer-0F172A?style=flat-square"/>
+
+<br/><br/>
+
+| **Challenge** | **Approach** | **Outcome** |
+|:---:|:---|:---|
+| Weak online presence blocking partner access (Microsoft, PersonVue) | Full PWA corporate platform + custom CMS backoffice | Credibility restored for enterprise partnerships |
+| Slow legacy site hurting SEO &amp; recruitment | SSR, dynamic meta tags, Lighthouse 98/100 performance | +150% organic traffic in 3 months |
+| Fragmented content &amp; quote workflows | Unified 3-tier architecture with Redis caching layer | Load time under 1.2s · +40% application conversion |
+
+<br/>
+
+**3-tier containerized architecture**
+
+```mermaid
+flowchart TB
+    classDef accent fill:#3B82F6,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef core fill:#FF6B35,stroke:#0F172A,color:#fff,stroke-width:2px
+    classDef ops fill:#7C3AED,stroke:#0F172A,color:#fff,stroke-width:2px
+
+    subgraph PWA["React PWA — gta-it.com"]
+        CORP["Corporate pages"]
+        BLOG["Blog · Newsletter"]
+        PROJ["Project showcase"]
+        CAREER["Careers hub"]
+        QUOTE["Dynamic quote engine"]
+    end
+
+    subgraph API["Node.js · Express API"]
+        CMS["CMS controllers"]
+        AUTH["Auth · RBAC"]
+        CACHE["Redis cache layer"]
+    end
+
+    subgraph DB["Persistence"]
+        MONGO[("MongoDB · Prisma ORM")]
+    end
+
+    subgraph Prod["Production stack"]
+        NGX["Nginx reverse proxy"]
+        VPS["Hostinger VPS"]
+        CICD["GitHub Actions CI/CD"]
+    end
+
+    PWA -->|REST API| API
+    API --> CACHE
+    API --> MONGO
+    NGX --> PWA
+    NGX --> API
+    CICD --> VPS
+    VPS --> NGX
+
+    class CORP,BLOG,QUOTE accent
+    class CMS,AUTH core
+    class NGX,CICD ops
+```
+
+<br/>
+
+**Content publishing workflow**
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant Team as Marketing team
+    participant BO as Custom backoffice
+    participant API as Express API
+    participant Cache as Redis
+    participant Site as Public PWA
+
+    Team->>BO: Create or update content
+    BO->>API: Authenticated REST request
+    API->>API: Validate schema · persist
+    API->>Cache: Invalidate stale entries
+    Site->>API: SSR fetch + dynamic meta
+    API-->>Site: Fresh content
+    Site-->>Team: Live on gta-it.com
+```
+
+<br/>
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&amp;logo=nginx&amp;logoColor=white)
+
+<br/>
+
+<br/>
+
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Tech%20Arsenal&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
