@@ -30,10 +30,10 @@
       "url": "https://gta-it.com"
     },
     {
-      "id": "gta-academy",
-      "name": "GTA Academy",
+      "id": "ketc-services",
+      "name": "KETC Services",
       "status": "live",
-      "url": "https://academy.gta-it.com"
+      "url": "https://ketc-services.com"
     },
     {
       "id": "nexus",
@@ -49,7 +49,7 @@
       "id": "esopa",
       "name": "ESOPA",
       "status": "live",
-      "url": "https://esopa.org"
+      "url": "https://www.esopa.org"
     },
     {
       "id": "portfolio",

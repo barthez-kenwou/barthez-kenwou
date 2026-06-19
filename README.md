@@ -151,14 +151,10 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 </tr>
 
-<tr><td colspan="3"><br/></td></tr>
-
 <tr>
-<td align="center" valign="top">
+<td align="center" valign="middle">
 
 <img src="https://img.shields.io/badge/GTA_IT-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=FF6B35"/>
-
-<sub><b>Corporate PWA · CMS · Backoffice</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -178,43 +174,66 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 </td>
 </tr>
+<tr>
+<td colspan="3" align="center">
 
-<tr><td colspan="3"><br/></td></tr>
+<a href="https://gta-it.com">
+<picture>
+  <source srcset="assets/projects/gta-it.webp" type="image/webp"/>
+  <img src="assets/projects/gta-it.jpg" alt="GTA IT corporate PWA preview" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+</a>
+
+</td>
+</tr>
 
 <tr>
-<td align="center" valign="top">
+<td align="center" valign="middle">
 
-<img src="https://img.shields.io/badge/GTA_Academy-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=7C3AED"/>
-
-<sub><b>Training platform launch</b></sub>
+<img src="https://img.shields.io/badge/KETC_Services-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=7C3AED"/>
 
 </td>
 <td align="center" valign="middle">
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
 <br/>
-![Tailwind](https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white)
-![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-000?style=flat-square&amp;logo=shadcnui&amp;logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&amp;logo=prisma&amp;logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
 
 </td>
 <td align="center" valign="middle">
 
-<!-- README-AUTO-START:status-gta-academy -->
-<a href="https://academy.gta-it.com"><img src="https://img.shields.io/badge/LIVE-academy.gta-it.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live academy.gta-it.com"/></a>
-<!-- README-AUTO-END:status-gta-academy -->
+<!-- README-AUTO-START:status-ketc-services -->
+<a href="https://ketc-services.com"><img src="https://img.shields.io/badge/LIVE-ketc-services.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live ketc-services.com"/></a>
+<!-- README-AUTO-END:status-ketc-services -->
+
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+
+<img src="https://img.shields.io/badge/Performance-86-F59E0B?style=flat-square"/>
+<img src="https://img.shields.io/badge/Accessibility-96-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/Best_Practices-100-22C55E?style=flat-square"/>
+<img src="https://img.shields.io/badge/SEO-100-22C55E?style=flat-square"/>
+
+<br/><br/>
+
+<a href="https://ketc-services.com">
+<picture>
+  <source srcset="assets/projects/ketc-services.webp" type="image/webp"/>
+  <img src="assets/projects/ketc-services.jpg" alt="KETC Services Lighthouse scores" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+</a>
 
 </td>
 </tr>
 
-<tr><td colspan="3"><br/></td></tr>
-
 <tr>
-<td align="center" valign="top">
+<td align="center" valign="middle">
 
 <img src="https://img.shields.io/badge/NEXUS-0F172A?style=for-the-badge&amp;logo=turborepo&amp;logoColor=FF6B35"/>
-
-<sub><b>Modular SaaS ERP for restaurants</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -233,8 +252,22 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-nexus -->
 
 </td>
+</tr>
+<tr>
+<td colspan="3" align="center">
 
-<sub><b>Real estate · AI fraud detection</b></sub>
+<picture>
+  <source srcset="assets/projects/nexus.webp" type="image/webp"/>
+  <img src="assets/projects/nexus.jpg" alt="NEXUS modular SaaS ERP concept" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" valign="middle">
+
+<img src="https://img.shields.io/badge/Kaza-0F172A?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=7C3AED"/>
 
 </td>
 <td align="center" valign="middle">
@@ -253,8 +286,22 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-kaza -->
 
 </td>
+</tr>
+<tr>
+<td colspan="3" align="center">
 
-<sub><b>NGO platform · DevOps infra</b></sub>
+<picture>
+  <source srcset="assets/projects/kaza.webp" type="image/webp"/>
+  <img src="assets/projects/kaza.jpg" alt="Kaza PropTech mobile prototype" width="72%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+
+</td>
+</tr>
+
+<tr>
+<td align="center" valign="middle">
+
+<img src="https://img.shields.io/badge/ESOPA-0F172A?style=for-the-badge&amp;logo=wordpress&amp;logoColor=21759B"/>
 
 </td>
 <td align="center" valign="middle">
@@ -268,20 +315,28 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <td align="center" valign="middle">
 
 <!-- README-AUTO-START:status-esopa -->
-<a href="https://esopa.org"><img src="https://img.shields.io/badge/LIVE-esopa.org-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live esopa.org"/></a>
+<a href="https://www.esopa.org"><img src="https://img.shields.io/badge/LIVE-www.esopa.org-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live www.esopa.org"/></a>
 <!-- README-AUTO-END:status-esopa -->
 
 </td>
 </tr>
+<tr>
+<td colspan="3" align="center">
 
-<tr><td colspan="3"><br/></td></tr>
+<a href="https://www.esopa.org">
+<picture>
+  <source srcset="assets/projects/esopa.webp" type="image/webp"/>
+  <img src="assets/projects/esopa.jpg" alt="ESOPA NGO platform hero" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+</a>
+
+</td>
+</tr>
 
 <tr>
-<td align="center" valign="top">
+<td align="center" valign="middle">
 
 <img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=3B82F6"/>
-
-<sub><b>Fullstack platform · CI/CD</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -298,6 +353,18 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-START:status-portfolio -->
 <a href="https://barthez-kenwou.dev"><img src="https://img.shields.io/badge/LIVE-barthez-kenwou.dev-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live barthez-kenwou.dev"/></a>
 <!-- README-AUTO-END:status-portfolio -->
+
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+
+<a href="https://barthez-kenwou.dev">
+<picture>
+  <source srcset="assets/projects/portfolio.webp" type="image/webp"/>
+  <img src="assets/projects/portfolio.jpg" alt="Portfolio platform preview" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+</picture>
+</a>
 
 </td>
 </tr>
