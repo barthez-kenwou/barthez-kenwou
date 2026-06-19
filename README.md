@@ -90,23 +90,23 @@ Always looking for new challenges, I continuously invest in learning new technol
 
 <br/><br/>
 [![Linkedin: barthez-kenwou](https://img.shields.io/badge/-barthezkenwou-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/barthez-kenwou/)](https://www.linkedin.com/in/barthez-kenwou/)
-[![GitHub 01Barthez](https://img.shields.io/github/followers/karthikmudunuri?label=follow&style=social)](https://github.com/01Barthez)
-![GitHub User's stars](https://img.shields.io/github/stars/01Barthez)
-![GitHub forks](https://img.shields.io/github/forks/01Barthez/eldoraui)
+[![GitHub 01Barthez](https://img.shields.io/github/followers/karthikmudunuri?label=follow&style=social)](https://github.com/barthez-kenwou)
+![GitHub User's stars](https://img.shields.io/github/stars/barthez-kenwou)
+![GitHub forks](https://img.shields.io/github/forks/barthez-kenwou/eldoraui)
 <br/><br/>
-![Barthez's GitHub stats](https://github-readme-stats.vercel.app/api?username=01Barthez&show_icons=true&theme=radical)
+![Barthez's GitHub stats](https://github-readme-stats.vercel.app/api?username=barthez-kenwou&show_icons=true&theme=radical)
 <br/>
 
-![](https://github-readme-streak-stats.herokuapp.com/?user=01Barthez&theme=radical&hide_border=false)
+![](https://github-readme-streak-stats.herokuapp.com/?user=barthez-kenwou&theme=radical&hide_border=false)
 <br/>
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=01Barthez&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=barthez-kenwou&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 <hr/>
 
 ## 🏆 GitHub Trophies
 
-![](https://github-profile-trophy.vercel.app/?username=01Barthez&theme=radical&no-frame=true&no-bg=false&margin-w=4)
+![](https://github-profile-trophy.vercel.app/?username=barthez-kenwou&theme=radical&no-frame=true&no-bg=false&margin-w=4)
 
 <hr/>
 
