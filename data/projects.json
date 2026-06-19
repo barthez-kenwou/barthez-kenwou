@@ -1,0 +1,61 @@
+{
+  "portfolioRepo": "barthez-kenwou-porfolio",
+  "blogBaseUrl": "https://barthez-kenwou.dev/blog",
+  "newArticleDays": 30,
+  "featuredBlogSlugs": [
+    {
+      "slug": "ci-cd-github-actions-zero-to-expert",
+      "label": "CI_CD_WITH_GITHUB_ACTIONS",
+      "color": "FF6B35",
+      "logo": "githubactions"
+    },
+    {
+      "slug": "microservices-docker-kubernetes-mastery",
+      "label": "MICROSERVICES_DOCKER_K8S",
+      "color": "7C3AED",
+      "logo": "kubernetes"
+    },
+    {
+      "slug": "devsecops-in-practice-sast-dast",
+      "label": "DEVSECOPS_IN_PRACTICE",
+      "color": "22C55E",
+      "logo": "snyk"
+    }
+  ],
+  "projects": [
+    {
+      "id": "gta-it",
+      "name": "GTA IT",
+      "status": "live",
+      "url": "https://gta-it.com"
+    },
+    {
+      "id": "gta-academy",
+      "name": "GTA Academy",
+      "status": "live",
+      "url": "https://academy.gta-it.com"
+    },
+    {
+      "id": "nexus",
+      "name": "NEXUS",
+      "status": "in_progress"
+    },
+    {
+      "id": "kaza",
+      "name": "Kaza",
+      "status": "in_progress"
+    },
+    {
+      "id": "esopa",
+      "name": "ESOPA",
+      "status": "live",
+      "url": "https://esopa.org"
+    },
+    {
+      "id": "portfolio",
+      "name": "Portfolio",
+      "status": "live",
+      "url": "https://barthez-kenwou.dev"
+    }
+  ]
+}

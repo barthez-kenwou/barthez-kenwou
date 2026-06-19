@@ -1,0 +1,42 @@
+name: Auto-update README
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/projects.json"
+      - "scripts/update-readme.mjs"
+      - ".github/workflows/readme-auto-update.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile README
+        uses: actions/checkout@v4
+
+      - name: Checkout portfolio source
+        uses: actions/checkout@v4
+        with:
+          repository: barthez-kenwou/barthez-kenwou-porfolio
+          path: portfolio
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync dynamic README sections
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PORTFOLIO_BLOG_PATH: portfolio/src/entities/blogs/api/mock/blog.mocks.ts
+        run: node scripts/update-readme.mjs
+
+      - name: Commit README changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-update README dynamic sections"
+          file_pattern: README.md

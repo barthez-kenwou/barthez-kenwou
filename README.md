@@ -172,7 +172,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-[![Live](https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://gta-it.com)
+<!-- README-AUTO-START:status-gta-it -->
+<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta-it.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live gta-it.com"/></a>
+<!-- README-AUTO-END:status-gta-it -->
 
 </td>
 </tr>
@@ -198,7 +200,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-[![Live](https://img.shields.io/badge/LIVE-academy.gta--it.com-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://academy.gta-it.com)
+<!-- README-AUTO-START:status-gta-academy -->
+<a href="https://academy.gta-it.com"><img src="https://img.shields.io/badge/LIVE-academy.gta-it.com-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live academy.gta-it.com"/></a>
+<!-- README-AUTO-END:status-gta-academy -->
 
 </td>
 </tr>
@@ -224,17 +228,11 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
+<!-- README-AUTO-START:status-nexus -->
 <img src="https://img.shields.io/badge/IN_PROGRESS-F59E0B?style=for-the-badge&amp;logo=clockify&amp;logoColor=white" alt="In progress"/>
+<!-- README-AUTO-END:status-nexus -->
 
 </td>
-</tr>
-
-<tr><td colspan="3"><br/></td></tr>
-
-<tr>
-<td align="center" valign="top">
-
-<img src="https://img.shields.io/badge/Kaza-0F172A?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=7C3AED"/>
 
 <sub><b>Real estate · AI fraud detection</b></sub>
 
@@ -250,17 +248,11 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
+<!-- README-AUTO-START:status-kaza -->
 <img src="https://img.shields.io/badge/IN_PROGRESS-F59E0B?style=for-the-badge&amp;logo=clockify&amp;logoColor=white" alt="In progress"/>
+<!-- README-AUTO-END:status-kaza -->
 
 </td>
-</tr>
-
-<tr><td colspan="3"><br/></td></tr>
-
-<tr>
-<td align="center" valign="top">
-
-<img src="https://img.shields.io/badge/ESOPA-0F172A?style=for-the-badge&amp;logo=wordpress&amp;logoColor=21759B"/>
 
 <sub><b>NGO platform · DevOps infra</b></sub>
 
@@ -275,7 +267,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-[![Live](https://img.shields.io/badge/LIVE-esopa.org-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://esopa.org)
+<!-- README-AUTO-START:status-esopa -->
+<a href="https://esopa.org"><img src="https://img.shields.io/badge/LIVE-esopa.org-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live esopa.org"/></a>
+<!-- README-AUTO-END:status-esopa -->
 
 </td>
 </tr>
@@ -301,7 +295,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
-[![Live](https://img.shields.io/badge/LIVE-barthez--kenwou.dev-22C55E?style=for-the-badge&amp;logo=vercel&amp;logoColor=white)](https://barthez-kenwou.dev)
+<!-- README-AUTO-START:status-portfolio -->
+<a href="https://barthez-kenwou.dev"><img src="https://img.shields.io/badge/LIVE-barthez-kenwou.dev-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Live barthez-kenwou.dev"/></a>
+<!-- README-AUTO-END:status-portfolio -->
 
 </td>
 </tr>
@@ -1080,6 +1076,43 @@ sequenceDiagram
 </div>
 
 <br/>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Latest%20from%20the%20Blog&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
+
+<br/>
+
+<div align="center">
+
+<!-- README-AUTO-START:live-pulse -->
+<img src="https://img.shields.io/badge/Portfolio_deployed_pending_sync-3B82F6?style=flat-square&amp;logo=vercel&amp;logoColor=white" alt="Last portfolio deploy pending_sync"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Active_repos_N_A-7C3AED?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Active repositories N_A"/>
+&nbsp;
+<img src="https://img.shields.io/badge/PRs_this_month_N_A-FF6B35?style=flat-square&amp;logo=git&amp;logoColor=white" alt="Pull requests this month N_A"/>
+<!-- README-AUTO-END:live-pulse -->
+
+<br/><br/>
+
+<!-- README-AUTO-START:blog-latest -->
+<a href="https://barthez-kenwou.dev/blog/ci-cd-github-actions-zero-to-expert"><img src="https://img.shields.io/badge/CI_CD_WITH_GITHUB_ACTIONS-FF6B35?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="CI/CD with GitHub Actions – From Zero to Expert"/></a>
+&nbsp;
+<a href="https://barthez-kenwou.dev/blog/microservices-docker-kubernetes-mastery"><img src="https://img.shields.io/badge/MICROSERVICES_DOCKER_K8S-7C3AED?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white" alt="Microservices Architecture with Docker and Kubernetes – From Zero to Mastery"/></a>
+&nbsp;
+<a href="https://barthez-kenwou.dev/blog/devsecops-in-practice-sast-dast"><img src="https://img.shields.io/badge/DEVSECOPS_IN_PRACTICE-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white" alt="DevSecOps in Practice – SAST, DAST, SCA, IaC Scanning & CI/CD Integration (Real Setup)"/></a>
+<!-- README-AUTO-END:blog-latest -->
+
+<br/><br/>
+
+<a href="https://barthez-kenwou.dev/blog">
+<img src="https://img.shields.io/badge/READ_ALL_ARTICLES-7C3AED?style=for-the-badge&amp;logo=hashnode&amp;logoColor=white" alt="Read all articles"/>
+</a>
+
+<br/>
+
+<sub><b>Auto-synced daily via GitHub Actions · portfolio commits · live GitHub stats</b></sub>
+
+</div>
+
 <br/>
 
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Soft%20Skills&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
