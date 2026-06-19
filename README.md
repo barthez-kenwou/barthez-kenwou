@@ -177,7 +177,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/GTA_Academy-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=7C3AED"/>
 
-<br/><sub><b>Training platform launch</b></sub>
+<sub><b>Training platform launch</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -203,7 +203,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/NEXUS-0F172A?style=for-the-badge&amp;logo=turborepo&amp;logoColor=FF6B35"/>
 
-<br/><sub><b>Modular SaaS ERP for restaurants</b></sub>
+<sub><b>Modular SaaS ERP for restaurants</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -229,7 +229,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/Kaza-0F172A?style=for-the-badge&amp;logo=homeassistant&amp;logoColor=7C3AED"/>
 
-<br/><sub><b>Real estate · AI fraud detection</b></sub>
+<sub><b>Real estate · AI fraud detection</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -255,7 +255,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/ESOPA-0F172A?style=for-the-badge&amp;logo=wordpress&amp;logoColor=21759B"/>
 
-<br/><sub><b>NGO platform · DevOps infra</b></sub>
+<sub><b>NGO platform · DevOps infra</b></sub>
 
 </td>
 <td align="center" valign="middle">
@@ -280,7 +280,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <img src="https://img.shields.io/badge/Portfolio-0F172A?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=3B82F6"/>
 
-<br/><sub><b>Fullstack platform · CI/CD</b></sub>
+<sub><b>Fullstack platform · CI/CD</b></sub>
 
 </td>
 <td align="center" valign="middle">
