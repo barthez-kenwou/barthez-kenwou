@@ -65,7 +65,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/><br/>
 
-<img src="assets/engineer-yaml.svg" alt="engineer.yaml — VS Code style profile" width="92%"/>
+<img src="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/main/assets/engineer-yaml.svg" alt="engineer.yaml VS Code profile" width="92%"/>
 
 </div>
 
