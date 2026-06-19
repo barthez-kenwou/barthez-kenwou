@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/headers/hero.svg" alt="Barthez Kenwou — Full Stack · DevOps · Cloud Architect" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0F172A,35:1E1B4B,70:7C3AED,100:FF6B35&amp;height=220&amp;section=header&amp;text=Barthez%20Kenwou&amp;fontSize=46&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Full%20Stack%20%C2%B7%20DevOps%20%C2%B7%20Cloud%20Architect&amp;descSize=16&amp;descAlignY=62&amp;descAlign=50"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=500&amp;size=22&amp;pause=1200&amp;color=FF6B35&amp;center=true&amp;vCenter=true&amp;width=900&amp;lines=I+architect+digital+systems+that+scale.;I+ship+code+from+idea+to+production.;DevOps+%7C+AWS+%7C+Kubernetes+%7C+React.;Building+the+future%2C+commit+by+commit." alt="Typing intro" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1200&color=FF6B35&center=true&vCenter=true&width=900&lines=I+architect+digital+systems+that+scale.;I+ship+code+from+idea+to+production.;DevOps+%7C+AWS+%7C+Kubernetes+%7C+React.;Building+the+future%2C+commit+by+commit." alt="Typing intro" />
 
 <br/>
 
@@ -59,7 +59,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-what-i-craft.svg" alt="What I Craft" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=What%20I%20Craft&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
 
 <br/>
 
@@ -69,7 +69,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <tr>
 <td align="center" width="33%" valign="top">
 
-<img src="assets/headers/pill-build.svg" alt="BUILD" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=50&amp;section=header&amp;text=BUILD&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -85,7 +85,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="assets/headers/pill-ship.svg" alt="SHIP" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=50&amp;section=header&amp;text=SHIP&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -101,7 +101,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" width="33%" valign="top">
 
-<img src="assets/headers/pill-scale.svg" alt="SCALE" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=50&amp;section=header&amp;text=SCALE&amp;fontSize=36&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -122,7 +122,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-signature-projects.svg" alt="Signature Projects" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=40&amp;section=header&amp;text=Signature%20Projects&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -308,7 +308,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-tech-arsenal.svg" alt="Tech Arsenal" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Tech%20Arsenal&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -374,7 +374,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-certifications.svg" alt="Certifications and Credentials" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=40&amp;section=header&amp;text=Certifications%20and%20Credentials&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -459,7 +459,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-pipeline.svg" alt="The Pipeline I Live By" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=The%20Pipeline%20I%20Live%20By&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <div align="center">
 
@@ -482,13 +482,13 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <td align="center"><img src="https://img.shields.io/badge/ITERATE-F59E0B?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="ITERATE"/></td>
 </tr>
 </table>
-<img src="assets/headers/pipeline-tagline.svg" alt="automated · secure · measurable · repeatable" width="85%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=gradient&amp;height=30&amp;section=footer&amp;text=automated%20%C2%B7%20secure%20%C2%B7%20measurable%20%C2%B7%20repeatable&amp;fontSize=12&amp;fontColor=FFFFFF" width="85%"/>
 
 <br/>
 <br/>
 <br/>
 
-<img src="assets/headers/section-github-pulse.svg" alt="GitHub Pulse" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=40&amp;section=header&amp;text=GitHub%20Pulse&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 <br/>
@@ -507,7 +507,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <br/>
 
 <img src="https://github-readme-stats.vercel.app/api?username=barthez-kenwou&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;icon_color=7C3AED&amp;text_color=FFFFFF&amp;rank_icon=percentile" alt="GitHub Stats" height="165"/>
-<img src="https://streak-stats.demolab.com/?user=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;background=0F172A&amp;ring=FF6B35&amp;fire=7C3AED&amp;currStreakLabel=FFFFFF" alt="Streak Stats" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;background=0F172A&amp;ring=FF6B35&amp;fire=7C3AED&amp;currStreakLabel=FFFFFF" alt="Streak Stats" height="165"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;text_color=FFFFFF&amp;layout=compact&amp;langs_count=8" alt="Top Languages" height="165"/>
 
 <br/>
@@ -521,7 +521,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <br/>
 <br/>
 
-<img src="assets/headers/section-soft-skills.svg" alt="Soft Skills" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Soft%20Skills&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -566,7 +566,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="assets/headers/section-cta.svg" alt="Let's Build Something Bold" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Let%27s%20Build%20Something%20Bold&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <div align="center">
 
@@ -579,13 +579,13 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 <br/>
 <br/>
 
-<img src="assets/headers/section-quote.svg" alt="Daily Dev Quote" width="58%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=24&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 <br/>
 
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="85%"/>
 
 <br/>
 
-<img src="assets/headers/footer.svg" alt="Thanks for visiting" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:FF6B35,50:7C3AED,100:0F172A&amp;height=100&amp;section=footer&amp;fontSize=14&amp;fontColor=FFFFFF&amp;text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&amp;animation=scaleIn" width="100%"/>
 
 </div>
