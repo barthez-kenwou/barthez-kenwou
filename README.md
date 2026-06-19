@@ -72,8 +72,6 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <sub><b>Modern web &amp; mobile experiences</b></sub>
 
-<br/>
-
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&amp;logo=typescript&amp;logoColor=white)
@@ -90,8 +88,6 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <sub><b>APIs, automation &amp; delivery</b></sub>
 
-<br/>
-
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white)
 ![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white)
@@ -107,8 +103,6 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <br/>
 
 <sub><b>Cloud, security &amp; observability</b></sub>
-
-<br/>
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
