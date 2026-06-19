@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-label="engineer.yaml VS Code editor">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3c3c3c"/>
+      <stop offset="100%" stop-color="#323233"/>
+    </linearGradient>
+    <style>
+      .mono { font-family: 'Cascadia Code', 'Fira Code', Consolas, 'Courier New', monospace; }
+      .ln { fill: #858585; font-size: 13px; }
+      .comment { fill: #6a9955; font-size: 14px; }
+      .key { fill: #9cdcfe; font-size: 14px; }
+      .str { fill: #ce9178; font-size: 14px; }
+      .plain { fill: #d4d4d4; font-size: 14px; }
+      .bracket { fill: #ffd700; font-size: 14px; }
+      .tab { fill: #1e1e1e; font-size: 12px; }
+      .tab-label { fill: #cccccc; font-size: 12px; }
+      .title { fill: #cccccc; font-size: 12px; opacity: 0.85; }
+    </style>
+  </defs>
+
+  <rect x="8" y="8" width="704" height="384" rx="10" fill="#252526" filter="url(#shadow)"/>
+  <rect x="8" y="8" width="704" height="36" rx="10" fill="url(#titleBar)"/>
+  <rect x="8" y="32" width="704" height="12" fill="url(#titleBar)"/>
+
+  <circle cx="30" cy="26" r="7" fill="#ff5f57">
+    <animate attributeName="opacity" values="1;0.75;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="52" cy="26" r="7" fill="#febc2e"/>
+  <circle cx="74" cy="26" r="7" fill="#28c840"/>
+
+  <text x="360" y="30" text-anchor="middle" class="mono title">engineer.yaml  Visual Studio Code</text>
+
+  <rect x="8" y="44" width="704" height="34" fill="#252526"/>
+  <rect x="24" y="50" width="148" height="26" rx="6" fill="#1e1e1e"/>
+  <rect x="24" y="74" width="148" height="4" fill="#007acc"/>
+  <text x="38" y="68" class="mono tab-label">! engineer.yaml</text>
+  <rect x="182" y="50" width="108" height="26" rx="6" fill="#2d2d2d" opacity="0.65"/>
+  <text x="196" y="68" class="mono tab" fill="#969696">README.md</text>
+
+  <rect x="8" y="78" width="48" height="314" fill="#1e1e1e"/>
+  <rect x="56" y="78" width="656" height="314" fill="#1e1e1e"/>
+  <line x1="56" y1="78" x2="56" y2="392" stroke="#333333" stroke-width="1"/>
+
+  <text x="22" y="104" class="mono ln">1</text>
+  <text x="22" y="124" class="mono ln">2</text>
+  <text x="22" y="144" class="mono ln">3</text>
+  <text x="22" y="164" class="mono ln">4</text>
+  <text x="22" y="184" class="mono ln">5</text>
+  <text x="22" y="204" class="mono ln">6</text>
+  <text x="22" y="224" class="mono ln">7</text>
+  <text x="22" y="244" class="mono ln">8</text>
+  <text x="22" y="264" class="mono ln">9</text>
+  <text x="22" y="284" class="mono ln">10</text>
+  <text x="22" y="304" class="mono ln">11</text>
+  <text x="22" y="324" class="mono ln">12</text>
+
+  <text x="72" y="104" class="mono comment"># engineer.yaml</text>
+
+  <text x="72" y="124" class="mono key">name</text><text x="108" y="124" class="mono plain">: </text><text x="118" y="124" class="mono str">Barthez Kenwou</text>
+
+  <text x="72" y="144" class="mono key">role</text><text x="100" y="144" class="mono plain">: </text><text x="110" y="144" class="mono str">DevOps Engineer &amp; Full Stack Developer</text>
+
+  <text x="72" y="164" class="mono key">location</text><text x="132" y="164" class="mono plain">: </text><text x="142" y="164" class="mono str">Yaoundé, Cameroon</text>
+
+  <text x="72" y="184" class="mono key">focus</text><text x="108" y="184" class="mono plain">: </text><text x="118" y="184" class="mono bracket">[</text><text x="126" y="184" class="mono str">AWS, Kubernetes, React, Node.js, DevSecOps</text><text x="498" y="184" class="mono bracket">]</text>
+
+  <text x="72" y="204" class="mono key">currently</text><text x="144" y="204" class="mono plain">:</text>
+
+  <text x="88" y="224" class="mono key">building</text><text x="148" y="224" class="mono plain">: </text><text x="158" y="224" class="mono bracket">[</text><text x="166" y="224" class="mono str">NEXUS, Kaza, DevSecOps pipelines</text><text x="430" y="224" class="mono bracket">]</text>
+
+  <text x="88" y="244" class="mono key">teaching</text><text x="148" y="244" class="mono plain">: </text><text x="158" y="244" class="mono str">IT Engineering Factory / WorketYamo</text>
+
+  <text x="88" y="264" class="mono key">working</text><text x="144" y="264" class="mono plain">: </text><text x="154" y="264" class="mono bracket">[</text><text x="162" y="264" class="mono str">INTELEK, ZENORA</text><text x="310" y="264" class="mono bracket">]</text>
+
+  <text x="72" y="284" class="mono key">open_to</text><text x="124" y="284" class="mono plain">: </text><text x="134" y="284" class="mono bracket">[</text><text x="142" y="284" class="mono str">freelance, cloud architecture, mentoring, SaaS products</text><text x="562" y="284" class="mono bracket">]</text>
+
+  <rect x="572" y="272" width="2" height="18" fill="#aeafad">
+    <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="8" y="392" width="704" height="22" rx="0" fill="#007acc"/>
+  <text x="20" y="407" class="mono" fill="#ffffff" font-size="11">main</text>
+  <text x="72" y="407" class="mono" fill="#ffffff" font-size="11" opacity="0.9">UTF-8</text>
+  <text x="130" y="407" class="mono" fill="#ffffff" font-size="11" opacity="0.9">YAML</text>
+  <text x="620" y="407" class="mono" fill="#ffffff" font-size="11" opacity="0.9">Ln 12, Col 1</text>
+
+  <rect x="56" y="104" width="3" height="20" fill="#007acc" opacity="0.0">
+    <animate attributeName="opacity" values="0;0.35;0" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="104;124;144;164;184;204;224;244;264;284;104" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="height" values="20;20;20;20;20;16;16;16;16;16;20" dur="12s" repeatCount="indefinite"/>
+  </rect>
+</svg>

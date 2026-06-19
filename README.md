@@ -59,6 +59,18 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
+<div align="center">
+
+<sub><b>// whoami — engineer profile</b></sub>
+
+<br/><br/>
+
+<img src="assets/engineer-yaml.svg" alt="engineer.yaml — VS Code style profile" width="92%"/>
+
+</div>
+
+<br/>
+
 <img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=What%20I%20Craft&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
 
 <br/>
