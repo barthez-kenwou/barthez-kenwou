@@ -60,37 +60,68 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<table>
+<div align="center">
+
+<table width="96%">
 <tr>
-<td align="center" width="33%">
+<td align="center" width="33%" valign="top">
 
-### ⚡ Build
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=32&amp;section=header&amp;text=BUILD&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
 
-Modern web & mobile experiences
+<br/><br/>
 
-`React` `Next.js` `TypeScript` `React Native` `PWA`
+<sub><b>Modern web &amp; mobile experiences</b></sub>
+
+<br/><br/>
+
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&amp;logo=nextdotjs&amp;logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&amp;logo=typescript&amp;logoColor=white)
+<br/>
+![React Native](https://img.shields.io/badge/React_Native-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black)
+![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&amp;logo=pwa&amp;logoColor=white)
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="33%" valign="top">
 
-### 🚀 Ship
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=32&amp;section=header&amp;text=SHIP&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
 
-APIs, automation & delivery
+<br/><br/>
 
-`Node.js` `Express` `GraphQL` `Docker` `GitHub Actions`
+<sub><b>APIs, automation &amp; delivery</b></sub>
+
+<br/><br/>
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
+![Express](https://img.shields.io/badge/Express-000?style=flat-square&amp;logo=express&amp;logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white)
+<br/>
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white)
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="33%" valign="top">
 
-### ☁️ Scale
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=3B82F6&amp;height=32&amp;section=header&amp;text=SCALE&amp;fontSize=14&amp;fontColor=FFFFFF" width="88%"/>
 
-Cloud, security & observability
+<br/><br/>
 
-`AWS` `Kubernetes` `Terraform` `Prometheus` `DevSecOps`
+<sub><b>Cloud, security &amp; observability</b></sub>
+
+<br/><br/>
+
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&amp;logo=amazonaws&amp;logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&amp;logo=terraform&amp;logoColor=white)
+<br/>
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white)
+![DevSecOps](https://img.shields.io/badge/DevSecOps-22C55E?style=flat-square&amp;logo=snyk&amp;logoColor=white)
 
 </td>
 </tr>
 </table>
+
+</div>
 
 <br/>
 
@@ -179,13 +210,81 @@ Cloud, security & observability
 
 <br/>
 
-| Credential | Issuer |
-|:-----------|:-------|
-| Certified Kubernetes Administrator (CKA) | Udemy |
-| AWS Solutions Architect Associate | AWS |
-| AWS Cloud Practitioner | Udemy |
-| Docker Certified Associate | Udemy |
-| Full Stack Development | IT Engineering Factory |
+<div align="center">
+
+<table width="88%">
+<tr>
+<td align="center" colspan="2">
+
+<img src="https://img.shields.io/badge/CREDENTIAL-FF6B35?style=for-the-badge&amp;logo=googlescholar&amp;logoColor=white"/>
+<img src="https://img.shields.io/badge/ISSUER-7C3AED?style=for-the-badge&amp;logo=vercel&amp;logoColor=white"/>
+
+</td>
+</tr>
+<tr><td colspan="2"><br/></td></tr>
+<tr>
+<td align="right" width="62%">
+
+<img src="https://img.shields.io/badge/Certified_Kubernetes_Administrator_(CKA)-0F172A?style=flat-square&amp;logo=kubernetes&amp;logoColor=326CE5"/>
+
+</td>
+<td align="left" width="38%">
+
+<img src="https://img.shields.io/badge/Udemy-EC5252?style=flat-square&amp;logo=udemy&amp;logoColor=white"/>
+
+</td>
+</tr>
+<tr>
+<td align="right">
+
+<img src="https://img.shields.io/badge/AWS_Solutions_Architect_Associate-0F172A?style=flat-square&amp;logo=amazonaws&amp;logoColor=FF9900"/>
+
+</td>
+<td align="left">
+
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&amp;logo=amazonaws&amp;logoColor=FF9900"/>
+
+</td>
+</tr>
+<tr>
+<td align="right">
+
+<img src="https://img.shields.io/badge/AWS_Cloud_Practitioner-0F172A?style=flat-square&amp;logo=amazonaws&amp;logoColor=FF9900"/>
+
+</td>
+<td align="left">
+
+<img src="https://img.shields.io/badge/Udemy-EC5252?style=flat-square&amp;logo=udemy&amp;logoColor=white"/>
+
+</td>
+</tr>
+<tr>
+<td align="right">
+
+<img src="https://img.shields.io/badge/Docker_Certified_Associate-0F172A?style=flat-square&amp;logo=docker&amp;logoColor=2496ED"/>
+
+</td>
+<td align="left">
+
+<img src="https://img.shields.io/badge/Udemy-EC5252?style=flat-square&amp;logo=udemy&amp;logoColor=white"/>
+
+</td>
+</tr>
+<tr>
+<td align="right">
+
+<img src="https://img.shields.io/badge/Full_Stack_Development-0F172A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB"/>
+
+</td>
+<td align="left">
+
+<img src="https://img.shields.io/badge/IT_Engineering_Factory-7C3AED?style=flat-square&amp;logo=googlechrome&amp;logoColor=white"/>
+
+</td>
+</tr>
+</table>
+
+</div>
 
 <br/>
 
@@ -266,14 +365,52 @@ Cloud, security & observability
 
 <br/>
 
-<table>
+<br/>
+
+<div align="center">
+
+<table width="96%">
 <tr>
-<td align="center"><b>Clear Communication</b><br/><sub>Technical & non-technical audiences</sub></td>
-<td align="center"><b>Team Leadership</b><br/><sub>Mentoring · code review · delivery</sub></td>
-<td align="center"><b>Adaptability</b><br/><sub>Fast learner · problem solver</sub></td>
-<td align="center"><b>Continuous Growth</b><br/><sub>Curiosity · innovation · excellence</sub></td>
+<td align="center" width="25%" valign="top">
+
+<img src="https://img.shields.io/badge/Clear_Communication-FF6B35?style=for-the-badge&amp;logo=slack&amp;logoColor=white"/>
+
+<br/><br/>
+
+<sub>Technical &amp; non-technical audiences</sub>
+
+</td>
+<td align="center" width="25%" valign="top">
+
+<img src="https://img.shields.io/badge/Team_Leadership-7C3AED?style=for-the-badge&amp;logo=teamspeak&amp;logoColor=white"/>
+
+<br/><br/>
+
+<sub>Mentoring · code review · delivery</sub>
+
+</td>
+<td align="center" width="25%" valign="top">
+
+<img src="https://img.shields.io/badge/Adaptability-3B82F6?style=for-the-badge&amp;logo=lightbulb&amp;logoColor=white"/>
+
+<br/><br/>
+
+<sub>Fast learner · problem solver</sub>
+
+</td>
+<td align="center" width="25%" valign="top">
+
+<img src="https://img.shields.io/badge/Continuous_Growth-22C55E?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
+
+<br/><br/>
+
+<sub>Curiosity · innovation · excellence</sub>
+
+</td>
 </tr>
 </table>
+
+</div>
 
 <br/>
 
@@ -293,15 +430,11 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=36&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=16&amp;fontColor=FFFFFF&amp;animation=twinkling" width="72%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=32&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=14&amp;fontColor=FFFFFF&amp;animation=twinkling" width="58%"/>
 
 <br/><br/>
 
-<a href="https://github.com/PiyushSuthar/github-readme-quotes" target="_blank">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="92%"/>
-</a>
-
-<sub><i>Refreshes with a new quote on each visit — tap to explore the source</i></sub>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="74%"/>
 
 <br/>
 
