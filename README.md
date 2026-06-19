@@ -132,21 +132,26 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <div align="center">
 
-<table width="94%">
+<table width="98%">
 <tr>
-<td align="center" width="34%">
+<td align="center" width="26%">
 
 <img src="https://img.shields.io/badge/PROJECT-FF6B35?style=for-the-badge&amp;logo=googledocs&amp;logoColor=white"/>
 
 </td>
-<td align="center" width="42%">
+<td align="center" width="34%">
 
 <img src="https://img.shields.io/badge/STACK-7C3AED?style=for-the-badge&amp;logo=stackoverflow&amp;logoColor=white"/>
 
 </td>
-<td align="center" width="24%">
+<td align="center" width="22%">
 
 <img src="https://img.shields.io/badge/STATUS-3B82F6?style=for-the-badge&amp;logo=rocket&amp;logoColor=white"/>
+
+</td>
+<td align="center" width="18%">
+
+<img src="https://img.shields.io/badge/PREVIEW-0F172A?style=for-the-badge&amp;logo=eye&amp;logoColor=FFFFFF"/>
 
 </td>
 </tr>
@@ -173,14 +178,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-gta-it -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
+<td align="center" valign="middle">
 
 <a href="https://gta-it.com">
 <picture>
   <source srcset="assets/projects/gta-it.webp" type="image/webp"/>
-  <img src="assets/projects/gta-it.jpg" alt="GTA IT corporate PWA preview" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/gta-it.jpg" alt="GTA IT preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
 </a>
 
@@ -195,6 +198,9 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 </td>
 <td align="center" valign="middle">
 
+<img src="https://img.shields.io/badge/Perf-86-F59E0B?style=flat-square"/>
+<img src="https://img.shields.io/badge/SEO-100-22C55E?style=flat-square"/>
+<br/>
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&amp;logo=react&amp;logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&amp;logo=node.js&amp;logoColor=white)
 <br/>
@@ -209,21 +215,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-ketc-services -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
-
-<img src="https://img.shields.io/badge/Performance-86-F59E0B?style=flat-square"/>
-<img src="https://img.shields.io/badge/Accessibility-96-22C55E?style=flat-square"/>
-<img src="https://img.shields.io/badge/Best_Practices-100-22C55E?style=flat-square"/>
-<img src="https://img.shields.io/badge/SEO-100-22C55E?style=flat-square"/>
-
-<br/><br/>
+<td align="center" valign="middle">
 
 <a href="https://ketc-services.com">
 <picture>
   <source srcset="assets/projects/ketc-services.webp" type="image/webp"/>
-  <img src="assets/projects/ketc-services.jpg" alt="KETC Services Lighthouse scores" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/ketc-services.jpg" alt="KETC Services preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
 </a>
 
@@ -252,14 +249,14 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-nexus -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
+<td align="center" valign="middle">
 
+<a href="https://barthez-kenwou.dev">
 <picture>
   <source srcset="assets/projects/nexus.webp" type="image/webp"/>
-  <img src="assets/projects/nexus.jpg" alt="NEXUS modular SaaS ERP concept" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/nexus.jpg" alt="NEXUS preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
+</a>
 
 </td>
 </tr>
@@ -286,14 +283,14 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-kaza -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
+<td align="center" valign="middle">
 
+<a href="https://barthez-kenwou.dev">
 <picture>
   <source srcset="assets/projects/kaza.webp" type="image/webp"/>
-  <img src="assets/projects/kaza.jpg" alt="Kaza PropTech mobile prototype" width="72%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/kaza.jpg" alt="Kaza preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
+</a>
 
 </td>
 </tr>
@@ -319,14 +316,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-esopa -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
+<td align="center" valign="middle">
 
 <a href="https://www.esopa.org">
 <picture>
   <source srcset="assets/projects/esopa.webp" type="image/webp"/>
-  <img src="assets/projects/esopa.jpg" alt="ESOPA NGO platform hero" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/esopa.jpg" alt="ESOPA preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
 </a>
 
@@ -355,14 +350,12 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 <!-- README-AUTO-END:status-portfolio -->
 
 </td>
-</tr>
-<tr>
-<td colspan="3" align="center">
+<td align="center" valign="middle">
 
 <a href="https://barthez-kenwou.dev">
 <picture>
   <source srcset="assets/projects/portfolio.webp" type="image/webp"/>
-  <img src="assets/projects/portfolio.jpg" alt="Portfolio platform preview" width="92%" style="border-radius: 12px; border: 1px solid #1E293B;"/>
+  <img src="assets/projects/portfolio.jpg" alt="Portfolio preview" width="100" style="border-radius: 8px; border: 1px solid #1E293B;"/>
 </picture>
 </a>
 
@@ -622,7 +615,7 @@ flowchart TD
 <br/>
 
 <img src="https://img.shields.io/badge/GTA_IT-Corporate_PWA_·_CMS_·_Backoffice-3B82F6?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white"/>
-<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta--it.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="gta-it.com"/></a>
+<a href="https://gta-it.com"><img src="https://img.shields.io/badge/LIVE-gta-it.com-22C55E?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="gta-it.com"/></a>
 <img src="https://img.shields.io/badge/STATUS-Production-22C55E?style=flat-square"/>
 <img src="https://img.shields.io/badge/ROLE-Full_Stack_Developer-0F172A?style=flat-square"/>
 
