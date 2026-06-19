@@ -754,7 +754,7 @@ sequenceDiagram
 
 </details>
 
-<details>
+<details open>
 <summary><b>Architecture & Practices</b></summary>
 <br/>
 
