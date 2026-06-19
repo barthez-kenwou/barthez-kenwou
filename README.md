@@ -1204,10 +1204,6 @@ sequenceDiagram
 
 <br/>
 
-<sub><b>Freelance · architecture · delivery · training — transparent starting rates</b></sub>
-
-<br/>
-
 <div align="center">
 
 <table width="90%">
@@ -1236,7 +1232,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-500%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 500 EUR"/>
+<img src="https://img.shields.io/badge/from-500%E2%82%AC-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 500 EUR"/>
 
 </td>
 </tr>
@@ -1253,7 +1249,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-400%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 400 EUR"/>
+<img src="https://img.shields.io/badge/from-400%E2%82%AC-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 400 EUR"/>
 
 </td>
 </tr>
@@ -1270,7 +1266,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-300%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 300 EUR"/>
+<img src="https://img.shields.io/badge/from-300%E2%82%AC-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 300 EUR"/>
 
 </td>
 </tr>
@@ -1287,7 +1283,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-600%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 600 EUR"/>
+<img src="https://img.shields.io/badge/from-600%E2%82%AC-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 600 EUR"/>
 
 </td>
 </tr>
@@ -1304,7 +1300,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-350%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 350 EUR"/>
+<img src="https://img.shields.io/badge/from-350%E2%82%AC-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 350 EUR"/>
 
 </td>
 </tr>
@@ -1321,7 +1317,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from-100%E2%82%AC%2Fh-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 100 EUR/h"/>
+<img src="https://img.shields.io/badge/from-100%E2%82%AC%2Fh-22C55E?style=for-the-badge&amp;labelColor=FF6B35&amp;logo=cashapp&amp;logoColor=white" alt="from 100 EUR/h"/>
 
 </td>
 </tr>
@@ -1341,10 +1337,6 @@ sequenceDiagram
 <a href="https://barthez-kenwou.dev/services">
 <img src="https://img.shields.io/badge/FULL_SERVICES_PAGE-FF6B35?style=for-the-badge&amp;logo=googlechrome&amp;logoColor=white" alt="Full services page"/>
 </a>
-
-<br/>
-
-<sub>Custom scopes · milestone-based billing · NDA available on request</sub>
 
 </div>
 
