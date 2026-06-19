@@ -293,7 +293,15 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 <br/>
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&quote=The+best+way+to+predict+the+future+is+to+build+it.&author=Barthez+Kenwou" alt="Quote"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=36&amp;section=header&amp;text=Daily%20Dev%20Quote&amp;fontSize=16&amp;fontColor=FFFFFF&amp;animation=twinkling" width="72%"/>
+
+<br/><br/>
+
+<a href="https://github.com/PiyushSuthar/github-readme-quotes" target="_blank">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&amp;theme=tokyonight&amp;border=true&amp;quoteColor=FF6B35&amp;authorColor=7C3AED&amp;backgroundColor=0F172A&amp;symbolColor=7C3AED" alt="Random inspirational dev quote" width="92%"/>
+</a>
+
+<sub><i>Refreshes with a new quote on each visit — tap to explore the source</i></sub>
 
 <br/>
 
