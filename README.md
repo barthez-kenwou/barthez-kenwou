@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,35:1E1B4B,70:7C3AED,100:FF6B35&height=220&section=header&text=Barthez%20Kenwou&fontSize=46&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20%C2%B7%20DevOps%20%C2%B7%20Cloud%20Architect&descSize=16&descAlignY=62&descAlign=50"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0F172A,35:1E1B4B,70:7C3AED,100:FF6B35&amp;height=220&amp;section=header&amp;text=Barthez%20Kenwou&amp;fontSize=46&amp;fontColor=FFFFFF&amp;animation=fadeIn&amp;fontAlignY=38&amp;desc=Full%20Stack%20%C2%B7%20DevOps%20%C2%B7%20Cloud%20Architect&amp;descSize=16&amp;descAlignY=62&amp;descAlign=50"/>
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1200&color=FF6B35&center=true&vCenter=true&width=900&lines=I+architect+digital+systems+that+scale.;I+ship+code+from+idea+to+production.;DevOps+%7C+AWS+%7C+Kubernetes+%7C+React.;Building+the+future%2C+commit+by+commit." alt="Typing intro" />
 
@@ -56,7 +56,7 @@ Passionate **Full Stack JS Developer** & **DevOps Engineer** with **3+ years** t
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0F172A&height=40&section=header&text=What%20I%20Craft&fontSize=18&fontColor=FFFFFF&animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=What%20I%20Craft&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
 
 <br/>
 
@@ -94,7 +94,7 @@ Cloud, security & observability
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1E1B4B&height=40&section=header&text=Signature%20Projects&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=40&amp;section=header&amp;text=Signature%20Projects&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -109,7 +109,7 @@ Cloud, security & observability
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0F172A&height=40&section=header&text=Tech%20Arsenal&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Tech%20Arsenal&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -160,13 +160,22 @@ Cloud, security & observability
 <summary><b>Architecture & Practices</b></summary>
 <br/>
 
-`Microservices` · `Modular Monolith` · `DDD` · `CI/CD` · `IaC` · `SLO/SLI` · `SBOM` · `Zero-Downtime Deploy` · `FinOps` · `Agile/Scrum`
+![Microservices](https://img.shields.io/badge/Microservices-7C3AED?style=flat-square&logo=kubernetes&logoColor=white)
+![Modular Monolith](https://img.shields.io/badge/Modular_Monolith-FF6B35?style=flat-square&logo=turborepo&logoColor=white)
+![DDD](https://img.shields.io/badge/DDD-0F172A?style=flat-square&logo=diagramsdotnet&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![IaC](https://img.shields.io/badge/IaC-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![SLO/SLI](https://img.shields.io/badge/SLO%2FSLI-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![SBOM](https://img.shields.io/badge/SBOM-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Zero Downtime](https://img.shields.io/badge/Zero_Downtime-22C55E?style=flat-square&logo=nginx&logoColor=white)
+![FinOps](https://img.shields.io/badge/FinOps-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
+![Agile/Scrum](https://img.shields.io/badge/Agile%2FScrum-0A66C2?style=flat-square&logo=scrumalliance&logoColor=white)
 
 </details>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=7C3AED&height=40&section=header&text=Certifications%20%26%20Credentials&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=40&amp;section=header&amp;text=Certifications%20and%20Credentials&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -180,46 +189,80 @@ Cloud, security & observability
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0F172A&height=40&section=header&text=The%20Pipeline%20I%20Live%20By&fontSize=18&fontColor=FFFFFF" width="100%"/>
-
-<br/>
-
-```
-  IDEATE ──▶ DESIGN ──▶ DEVELOP ──▶ TEST ──▶ DEPLOY ──▶ OBSERVE ──▶ ITERATE
-     │          │           │          │         │           │
-     └──────────┴───────────┴──────────┴─────────┴───────────┘
-                    automated · secure · measurable · repeatable
-```
-
-<br/>
-
-<img src="https://capsule-render.vercel.app/api?type=soft&color=1E1B4B&height=40&section=header&text=GitHub%20Pulse&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=The%20Pipeline%20I%20Live%20By&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=barthez-kenwou&bg_color=0F172A&color=FF6B35&line=7C3AED&point=FFFFFF&area=true&hide_border=true" alt="Activity Graph" width="100%"/>
+<sub><b>◈ THE ENGINEERING LOOP ◈</b></sub>
 
 <br/><br/>
 
-<img src="https://github.com/barthez-kenwou/barthez-kenwou/blob/output/github-contribution-grid-snake-dark.svg" alt="Contribution Snake" />
+<table>
+<tr>
+<td align="center"><img src="https://img.shields.io/badge/IDEATE-FF6B35?style=for-the-badge&amp;logo=notion&amp;logoColor=white" alt="IDEATE"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/DESIGN-7C3AED?style=for-the-badge&amp;logo=figma&amp;logoColor=white" alt="DESIGN"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/DEVELOP-3B82F6?style=for-the-badge&amp;logo=visualstudiocode&amp;logoColor=white" alt="DEVELOP"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/TEST-22C55E?style=for-the-badge&amp;logo=jest&amp;logoColor=white" alt="TEST"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/DEPLOY-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="DEPLOY"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/OBSERVE-E6522C?style=for-the-badge&amp;logo=prometheus&amp;logoColor=white" alt="OBSERVE"/></td>
+<td align="center"><img src="https://img.shields.io/badge/▶-0F172A?style=flat-square" alt="arrow"/></td>
+<td align="center"><img src="https://img.shields.io/badge/ITERATE-F59E0B?style=for-the-badge&amp;logo=git&amp;logoColor=white" alt="ITERATE"/></td>
+</tr>
+</table>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=gradient&amp;height=30&amp;section=footer&amp;text=automated%20%C2%B7%20secure%20%C2%B7%20measurable%20%C2%B7%20repeatable&amp;fontSize=12&amp;fontColor=FFFFFF" width="85%"/>
 
 <br/><br/>
 
-<img src="https://github-readme-stats.vercel.app/api?username=barthez-kenwou&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0F172A&title_color=FF6B35&icon_color=7C3AED&text_color=FFFFFF&rank_icon=percentile" alt="GitHub Stats" height="165"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=barthez-kenwou&theme=tokyonight&hide_border=true&background=0F172A&ring=FF6B35&fire=7C3AED&currStreakLabel=FFFFFF" alt="Streak Stats" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=barthez-kenwou&theme=tokyonight&hide_border=true&bg_color=0F172A&title_color=FF6B35&text_color=FFFFFF&layout=compact&langs_count=8" alt="Top Languages" height="165"/>
-
-<br/><br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=barthez-kenwou&theme=dracula&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="Trophies" width="100%"/>
+<pre>
+ ╭──────────────────────────────────────────────────────────────────────────────╮
+ │  feedback loop  ───────────────────────────────────────────────▶  IDEATE     │
+ ╰──────────────────────────────────────────────────────────────────────────────╯
+</pre>
 
 </div>
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=FF6B35&height=40&section=header&text=Soft%20Skills&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=40&amp;section=header&amp;text=GitHub%20Pulse&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
+
+<br/>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=barthez-kenwou&amp;bg_color=0F172A&amp;color=FF6B35&amp;line=7C3AED&amp;point=FFFFFF&amp;area=true&amp;hide_border=true" alt="Activity Graph" width="100%"/>
+
+<br/><br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/output/github-contribution-grid-snake-dark.svg"/>
+  <img src="https://raw.githubusercontent.com/barthez-kenwou/barthez-kenwou/output/github-contribution-grid-snake.svg" alt="Contribution Snake" width="100%"/>
+</picture>
+
+<br/><br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=barthez-kenwou&amp;show_icons=true&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;icon_color=7C3AED&amp;text_color=FFFFFF&amp;rank_icon=percentile" alt="GitHub Stats" height="165"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;background=0F172A&amp;ring=FF6B35&amp;fire=7C3AED&amp;currStreakLabel=FFFFFF" alt="Streak Stats" height="165"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=barthez-kenwou&amp;theme=tokyonight&amp;hide_border=true&amp;bg_color=0F172A&amp;title_color=FF6B35&amp;text_color=FFFFFF&amp;layout=compact&amp;langs_count=8" alt="Top Languages" height="165"/>
+
+<br/><br/>
+
+<img src="https://github-profile-trophy-kappa.vercel.app/?username=barthez-kenwou&amp;theme=dracula&amp;no-frame=true&amp;no-bg=true&amp;column=4&amp;margin-w=8&amp;margin-h=8" alt="Trophies" width="100%"/>
+
+</div>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=FF6B35&amp;height=40&amp;section=header&amp;text=Soft%20Skills&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -234,7 +277,7 @@ Cloud, security & observability
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0F172A&height=40&section=header&text=Let%27s%20Build%20Something%20Bold&fontSize=18&fontColor=FFFFFF" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=0F172A&amp;height=40&amp;section=header&amp;text=Let%27s%20Build%20Something%20Bold&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
@@ -246,7 +289,7 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 [![Portfolio](https://img.shields.io/badge/Explore_My_Portfolio-FF6B35?style=for-the-badge&logo=googlechrome&logoColor=white)](https://barthez-kenwou.dev/)
 [![Blog](https://img.shields.io/badge/Read_My_Blog-7C3AED?style=for-the-badge&logo=hashnode&logoColor=white)](https://barthez-kenwou.dev/blog)
-[![GitHub Repos](https://img.shields.io/badge/Browse_Repos-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/01Barthez?tab=repositories)
+[![GitHub Repos](https://img.shields.io/badge/Browse_Repos-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/barthez-kenwou?tab=repositories)
 
 <br/><br/>
 
@@ -254,6 +297,6 @@ Open to **freelance missions**, **cloud architecture**, **full-stack products**,
 
 <br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF6B35,50:7C3AED,100:0F172A&height=100&section=footer&fontSize=14&fontColor=FFFFFF&text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&animation=scaleIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:FF6B35,50:7C3AED,100:0F172A&amp;height=100&amp;section=footer&amp;fontSize=14&amp;fontColor=FFFFFF&amp;text=Thanks+for+visiting+%E2%80%94+let%27s+connect+and+create+something+extraordinary.&amp;animation=scaleIn" width="100%"/>
 
 </div>
