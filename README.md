@@ -1157,8 +1157,6 @@ sequenceDiagram
 
 <br/>
 
-<br/>
-
 <div align="center">
 
 <table width="96%">
@@ -1198,13 +1196,17 @@ sequenceDiagram
 
 <br/>
 
-<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=40&amp;section=header&amp;text=Services%20%26%20Offers&amp;fontSize=18&amp;fontColor=FFFFFF&amp;animation=twinkling" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=1E1B4B&amp;height=8&amp;section=footer&amp;text=%20&amp;fontSize=1&amp;fontColor=FFFFFF" width="90%"/>
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=soft&amp;color=7C3AED&amp;height=40&amp;section=header&amp;text=Services%20%C2%B7%20Offers&amp;fontSize=18&amp;fontColor=FFFFFF" width="100%"/>
 
 <br/>
 
 <sub><b>Freelance · architecture · delivery · training — transparent starting rates</b></sub>
 
-<br/><br/>
+<br/>
 
 <div align="center">
 
@@ -1234,7 +1236,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_500€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-500%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 500 EUR"/>
 
 </td>
 </tr>
@@ -1251,7 +1253,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_400€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-400%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 400 EUR"/>
 
 </td>
 </tr>
@@ -1268,7 +1270,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_300€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-300%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 300 EUR"/>
 
 </td>
 </tr>
@@ -1285,7 +1287,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_600€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-600%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 600 EUR"/>
 
 </td>
 </tr>
@@ -1302,7 +1304,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_350€-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-350%E2%82%AC-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 350 EUR"/>
 
 </td>
 </tr>
@@ -1319,7 +1321,7 @@ sequenceDiagram
 </td>
 <td align="right" valign="middle">
 
-<img src="https://img.shields.io/badge/from_100€/h-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8"/>
+<img src="https://img.shields.io/badge/from-100%E2%82%AC%2Fh-334155?style=flat-square&amp;labelColor=0F172A&amp;color=94A3B8" alt="from 100 EUR/h"/>
 
 </td>
 </tr>
