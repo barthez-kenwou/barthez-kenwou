@@ -1631,11 +1631,11 @@ sequenceDiagram
 <div align="center">
 
 <!-- README-AUTO-START:blog-latest -->
-<a href="https://barthez-kenwou.dev/blog/ci-cd-github-actions-zero-to-expert"><img src="https://img.shields.io/badge/CI_CD_WITH_GITHUB_ACTIONS-FF6B35?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="CI/CD with GitHub Actions – From Zero to Expert"/></a>
+<a href="https://barthez-kenwou.dev/blog/ci-cd-github-actions-zero-to-expert"><img src="https://img.shields.io/badge/CI_CD_WITH_GITHUB_ACTIONS-FF6B35?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white" alt="CI CD WITH GITHUB ACTIONS"/></a>
 &nbsp;
-<a href="https://barthez-kenwou.dev/blog/microservices-docker-kubernetes-mastery"><img src="https://img.shields.io/badge/MICROSERVICES_DOCKER_K8S-7C3AED?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white" alt="Microservices Architecture with Docker and Kubernetes – From Zero to Mastery"/></a>
+<a href="https://barthez-kenwou.dev/blog/microservices-docker-kubernetes-mastery"><img src="https://img.shields.io/badge/MICROSERVICES_DOCKER_K8S-7C3AED?style=for-the-badge&amp;logo=kubernetes&amp;logoColor=white" alt="MICROSERVICES DOCKER K8S"/></a>
 &nbsp;
-<a href="https://barthez-kenwou.dev/blog/devsecops-in-practice-sast-dast"><img src="https://img.shields.io/badge/DEVSECOPS_IN_PRACTICE-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white" alt="DevSecOps in Practice – SAST, DAST, SCA, IaC Scanning & CI/CD Integration (Real Setup)"/></a>
+<a href="https://barthez-kenwou.dev/blog/devsecops-in-practice-sast-dast"><img src="https://img.shields.io/badge/DEVSECOPS_IN_PRACTICE-22C55E?style=for-the-badge&amp;logo=snyk&amp;logoColor=white" alt="DEVSECOPS IN PRACTICE"/></a>
 <!-- README-AUTO-END:blog-latest -->
 
 <br/>
